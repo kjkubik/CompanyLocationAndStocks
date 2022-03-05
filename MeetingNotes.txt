@@ -1,0 +1,36 @@
+Mission/Vision: predict what potential stock performance will look like over the next year based on the past two years.
+ 
+Getting Data: 
+	a. API stocks : Kim (polygon)
+	b. address, long and lat: Mando (geoPy)
+	c. percent stock changes : Nikita
+	d. creation of 3 tables: Alexis and Sarah
+
+These are the three tables: 
+Ticker_Name			Ticker_Daily_Stat			Ticker_Location	
+-----------                     -----------------                       ---------------
+Ticker	(primary)			Ticker 	(primary)			Ticker 	(primary)
+Company_Name				Open						Address	
+							Close						City		
+							Change |(O-C)|				State	
+							volumn 						Country	
+							high						Longitude	
+							low							Latitude	
+							percent_changes				
+
+	
+*** Note : When you are done with something, check and see if anyone else is needing help. 
+(Right now Mando may need help with the company listing.)
+
+Monday Night Check 8 PM : (OR please if you cannot make it, please do #1 below in slack)
+
+	We meet for one hour to do the following: 
+		1. first 15 minutes: (STAND-UP)
+			a. What we did. 
+			b. what we are going to do.
+			c. what do we need help with.
+		2. help each other where we are stuck (if we can)
+
+Alexis (You are not the forgotten dog.) Nikita will meet you this Sunday. Mando will meet you the next Sunday. I will meet with you the 3rd Sunday and Sarah will meet with you the 4th Sunday.
+			
+
