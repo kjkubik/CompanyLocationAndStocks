@@ -12,6 +12,13 @@ from_ = (datetime.datetime.now() - datetime.timedelta(days=729)).strftime('%Y-%m
 to = datetime.datetime.now().strftime('%Y-%m-%d')
 time_span = "day"
 
+# calculate percentage change
+def get_percentage_change(open, close):
+    change_val = (close - open) / open
+    percentage = change_val * 100
+    return percentage
+
+
 # get stock prices
 def get_stock_price(output, client_key, ticker, time_span, from_, to):
 
@@ -24,8 +31,21 @@ def get_stock_price(output, client_key, ticker, time_span, from_, to):
    
             # print(f"{ticker}, {dt},{result['o']},{result['h']},{result['l']},{result['c']},{result['v']},{result['vw']},"
             #       f"{result['n']}")
+
+            # get values for open and close per result
+            opening_val = {result['o']}
+            closing_val = {result['c']}
+
+            # call percentage_change function to calculate percent change between open and close
+            percentage_change = get_percentage_change(opening_val,closing_val)
+
+ #           record = f"{ticker}, {dt}, {result['o']}, {result['h']}, {result['l']}, {result['c']}, {result['v']}," \
+ #                    f"{result['vw']}, {result['n']}\n"
+
+            # create record string
             record = f"{ticker}, {dt}, {result['o']}, {result['h']}, {result['l']}, {result['c']}, {result['v']}," \
-                     f"{result['vw']}, {result['n']}\n"
+                     f"{result['vw']}, {result['n']}, {percentage_change}\n"
+
             output.write(record)
         
 def main():
