@@ -15,7 +15,7 @@ time_span = "day"
 # calculate percentage change
 def get_percentage_change(open, close):
     change_val = (close - open) / open
-    percentage = change_val * 100
+    percentage = abs(change_val * 100)
     return percentage
 
 
@@ -33,12 +33,15 @@ def get_stock_price(output, client_key, ticker, time_span, from_, to):
             #       f"{result['n']}")
 
             # get values for open and close per result
-            opening_val = {result['o']}
-            closing_val = {result['c']}
+            opening_val = result['o']
+            closing_val = result['c']
+            # print(opening_val)
+            # print(closing_val)
+            
 
             # call percentage_change function to calculate percent change between open and close
             percentage_change = get_percentage_change(opening_val,closing_val)
-
+            #print(percentage_change)
  #           record = f"{ticker}, {dt}, {result['o']}, {result['h']}, {result['l']}, {result['c']}, {result['v']}," \
  #                    f"{result['vw']}, {result['n']}\n"
 
@@ -58,7 +61,7 @@ def main():
     output = open(f"resources/StockPrices.csv", "w")
     
     # write header record once
-    record = f"Ticker,Date, Open, High, Low, Close, Volume, Volume Weight, Number of Transactions\n"
+    record = f"Ticker, Date, Open, High, Low, Close, Volume, VolumeWeight, NumberOfTransactions, PercentageChange\n"
     output.write(record)
     
     # initialize
@@ -70,7 +73,7 @@ def main():
         record_count = record_count + 1
         stock = row['Ticker']
         
-        if record_count <= 5: 
+        if record_count <= 2: 
             print(f"count less or equal to than 5: {record_count}")
             print(f"going to find ticker: {row['Ticker']} price\n")
 
@@ -79,7 +82,7 @@ def main():
         else: 
             record_count = 1
             print(f"Just changed count to 1 ({record_count}), waiting for a minute.")
-            time.sleep(62) # Sleep for 62 seconds
+            time.sleep(6) # Sleep for 62 seconds
             print(f"okay, going to find ticker: {row['Ticker']} price\n")
 
             get_stock_price(output, stock_key, stock, time_span, from_, to)
