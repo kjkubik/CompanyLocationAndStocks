@@ -29,22 +29,13 @@ def get_stock_price(output, client_key, ticker, time_span, from_, to):
         for result in resp.results:
             dt = ts_to_datetime(result["t"])
    
-            # print(f"{ticker}, {dt},{result['o']},{result['h']},{result['l']},{result['c']},{result['v']},{result['vw']},"
-            #       f"{result['n']}")
-
             # get values for open and close per result
             opening_val = result['o']
             closing_val = result['c']
-            # print(opening_val)
-            # print(closing_val)
             
-
             # call percentage_change function to calculate percent change between open and close
             percentage_change = get_percentage_change(opening_val,closing_val)
-            #print(percentage_change)
- #           record = f"{ticker}, {dt}, {result['o']}, {result['h']}, {result['l']}, {result['c']}, {result['v']}," \
- #                    f"{result['vw']}, {result['n']}\n"
-
+            
             # create record string
             record = f"{ticker}, {dt}, {result['o']}, {result['h']}, {result['l']}, {result['c']}, {result['v']}," \
                      f"{result['vw']}, {result['n']}, {percentage_change}\n"
