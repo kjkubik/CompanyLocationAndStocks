@@ -1,5 +1,6 @@
 # Adding config.py file
 config.py
+config2.py
 .DS_Store
 .ipynb_checkpoints
 __pycache__
