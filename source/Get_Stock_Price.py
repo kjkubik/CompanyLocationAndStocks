@@ -64,7 +64,7 @@ def main():
         record_count = record_count + 1
         stock = row['Ticker']
         
-        if record_count <= 2: 
+        if record_count <= 5: 
             print(f"count less or equal to than 5: {record_count}")
             print(f"going to find ticker: {row['Ticker']} price\n")
 
@@ -73,7 +73,7 @@ def main():
         else: 
             record_count = 1
             print(f"Just changed count to 1 ({record_count}), waiting for a minute.")
-            time.sleep(6) # Sleep for 62 seconds
+            time.sleep(90) # Sleep for 62 seconds
             print(f"okay, going to find ticker: {row['Ticker']} price\n")
 
             get_stock_price(output, stock_key, stock, time_span, from_, to)
