@@ -1,5 +1,13 @@
+3/12/22 Saturday's Agenda
 
-3/11/22 - Saturday's Agenda
+#1 - Getting the companies datas for all 
+#2 - Spending time cleaning up
+#3 - Spending time making sure we can get data to our own computers
+#4 - ACTION ITEMS 
+    Mando and I talked about looking over things for ML
+
+
+3/11/22 - Friday's Agenda
 
 #1 Branches: 
 Good to see everyone having completed branches and commits to https://github.com/kjkubik/CompanyLocationAndStocks/branches!
