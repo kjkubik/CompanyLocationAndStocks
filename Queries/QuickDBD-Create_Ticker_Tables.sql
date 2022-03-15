@@ -23,7 +23,7 @@ CREATE TABLE "Ticker_Daily_Stat" (
     "number_of_transactions" float   NOT NULL,
     "percent_change" float   NOT NULL,
     CONSTRAINT "pk_Ticker_Daily_Stat" PRIMARY KEY (
-        "date"
+        "ticker","date"
      )
 );
 
@@ -42,8 +42,9 @@ CREATE TABLE "Ticker_Location" (
 CREATE TABLE "Company_Info" (
     "ticker" varchar   NOT NULL,
     "url" varchar   NOT NULL,
-    "employee_count" int   NOT NULL,
-    "revenue" int   NOT NULL,
+    "revenue" varchar   NOT NULL,
+    "employee_count" varchar   NOT NULL,
+    "sector" varchar   NOT NULL,
     CONSTRAINT "pk_Company_Info" PRIMARY KEY (
         "ticker"
      )
