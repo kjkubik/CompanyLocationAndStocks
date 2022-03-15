@@ -4,6 +4,8 @@ config2.py
 .DS_Store
 .ipynb_checkpoints
 __pycache__
+coordinates/SECTORS_edit.csv
+source/compcom_edit.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
