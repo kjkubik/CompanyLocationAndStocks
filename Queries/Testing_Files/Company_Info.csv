@@ -1,0 +1,103 @@
+ticker,url,revenue,size,sector
+AAPL,apple.com,over-1b,over-10k,Technology
+ABNB,airbnb.com,200m-1b,5k-10k,Technology
+ADBE,adobe.com,1m-10m,over-10k,Technology
+ADI,analog.com,over-1b,over-10k,Technology
+ADP,adp.com,over-1b,over-10k,Consumer Discretionary
+ADSK,autodesk.com,over-1b,over-10k,Healthcare
+AEP,aep.com,over-1b,over-10k,Energy
+ALGN,aligntech.com,200m-1b,over-10k,Technology
+AMAT,appliedmaterials.com,over-1b,over-10k,Technology
+AMD,amd.com,over-1b,5k-10k,Technology
+AMGN,amgen.com,over-1b,over-10k,Technology
+AMZN,amazon.com,over-1b,over-10k,Technology
+ANSS,ansys.com,200m-1b,1k-5k,Technology
+ASML,asml.com,over-1b,over-10k,Technology
+ATVI,activisionblizzard.com,over-1b,5k-10k,Technology
+AVGO,broadcom.com,over-1b,over-10k,Technology
+AZN,astrazeneca.com,over-1b,over-10k,Healthcare
+BIDU,ir.baidu.com,over-1b,over-10k,Technology
+BIIB,biogen.com,over-1b,5k-10k,Technology
+BKNG,bookkingholdings.com,over-1b,over-10k,Healthcare
+BMRN,biomarin.com,over-1b,1k-5k,Healthcare
+CDNS,cadence.com,over-1b,5k-10k,Technology
+CHTR,spectrum.com,over-1b,over-10k,Technology
+CMCSA,xfinity.com,over-1b,over-10k,Communication Services
+COST,costco.com,over-1b,over-10k,Consumer Discretionary
+CPRT,copart.com,over-1b,5k-10k,Technology
+CRWD,crowdstrike.com,50m-100m,1k-5k,Industrials
+CSCO,cisco.com,over-1b,over-10k,Technology
+CSX,csx.com,over-1b,over-10k,Communication Services
+CTAS,cintas.com,over-1b,over-10k,Consumer Staples
+CTSH,cognizant.com,over-1b,over-10k,Industrials
+DDOG,datadoghq.com,50m-100m,1k-5k,Technology
+DLTR,dollartree.com,over-1b,over-10k,Technology
+DOCU,docusign.com,1m-10m,5k-10k,Technology
+DXCM,dexcom.com,200m-1b,5k-10k,Healthcare
+EA,ea.com,over-1b,5k-10k,Consumer Staples
+EBAY,ebay.com,over-1b,over-10k,Technology
+EXC,exeloncorp.com,over-1b,over-10k,Technology
+FAST,fastenal.com,over-1b,over-10k,Industrials
+FB,facebook.com,1m-10m,over-10k,Industrials
+FISV,fiserv.com,over-1b,over-10k,Technology
+FTNT,fortinet.com,1m-10m,5k-10k,Financials
+GILD,gilead.com,over-1b,over-10k,Technology
+GOOG,google.com,over-1b,over-10k,Healthcare
+GOOGL,google.com,over-1b,over-10k,Technology
+HON,honeywell.com,over-1b,over-10k,Technology
+IDXX,idexx.com,over-1b,5k-10k,Industrials
+ILMN,illumina.com,over-1b,5k-10k,Healthcare
+INTC,intel.com,over-1b,over-10k,Technology
+INTU,intuit.com,over-1b,5k-10k,Technology
+ISRG,intuitive.com,over-1b,5k-10k,Healthcare
+JD,jd.com,over-1b,500-1k,Technology
+KDP,keurigdrpepper.com,over-1b,over-10k,Healthcare
+KHC,kraftheinzcompany.com,over-1b,over-10k,Consumer Discretionary
+KLAC,kla.com,over-1b,over-10k,Consumer Staples
+LCID,lucidmotors.com,1m-10m,1k-5k,Technology
+LRCX,lamresearch.com,over-1b,over-10k,Consumer Staples
+LULU,lululemon.com,over-1b,over-10k,Technology
+MAR,marriott.com,over-1b,over-10k,Technology
+MCHP,microchip.com,10m-50m,over-10k,Consumer Discretionary
+MDLZ,mondelezinternational.com,over-1b,over-10k,Technology
+MELI,mercadolibre.com,200m-1b,5k-10k,Consumer Discretionary
+MNST,monsterenergy.com,over-1b,1k-5k,Communication Services
+MRNA,modernatx.com,50m-100m,500-1k,Technology
+MRVL,marvell.com,over-1b,5k-10k,Consumer Staples
+MSFT,microsoft.com,over-1b,over-10k,Healthcare
+MTCH,mtch.com,over-1b,1k-5k,Consumer Staples
+MU,catalent.com,over-1b,over-10k,Technology
+NFLX,netflix.com,over-1b,5k-10k,Technology
+NTES,neteasegames.com,over-1b,over-10k,Technology
+NVDA,nvidia.com,over-1b,over-10k,Technology
+NXPI,nxp.com,over-1b,over-10k,Technology
+ODFL,odfl.com,over-1b,over-10k,Technology
+OKTA,okta.com,100m-200m,1k-5k,Technology
+ORLY,oreillyauto.com,over-1b,over-10k,Industrials
+PANW,paloaltonetworks.com,200m-1b,5k-10k,Consumer Discretionary
+PAYX,paychex.com,over-1b,over-10k,Industrials
+PCAR,paccar.com,over-1b,over-10k,Technology
+PDD,en.pinduoduo.com,over-1b,1k-5k,Industrials
+PEP,pepsico.com,over-1b,over-10k,Consumer Discretionary
+PYPL,investor.pypl.com,over-1b,over-10k,Financials
+QCOM,qualcomm.com,over-1b,over-10k,Consumer Staples
+REGN,regeneron.com,over-1b,5k-10k,Technology
+ROST,rossstores.com,over-1b,over-10k,Healthcare
+SBUX,starbucks.com,over-1b,over-10k,Consumer Discretionary
+SGEN,seagen.com,200m-1b,500-1k,Communication Services
+SIRI,siriusxm.com,over-1b,1k-5k,Healthcare
+SNPS,synopsys.com,over-1b,over-10k,Technology
+SPLK,splunk.com,200m-1b,5k-10k,Technology
+SWKS,skyworksinc.com,over-1b,5k-10k,Consumer Discretionary
+TEAM,atlassian.com,100m-200m,1k-5k,Technology
+TMUS,t-mobile.com,200m-1b,over-10k,Consumer Discretionary
+TSLA,tesla.com,over-1b,over-10k,Technology
+TXN,ti.com,over-1b,over-10k,Communication Services
+VRSK,verisk.com,over-1b,5k-10k,Technology
+VRSN,verisign.com,over-1b,500-1k,Industrials
+VRTX,vrtx.com,over-1b,1k-5k,Healthcare
+WBA,walgreensbootsalliance.com,over-1b,over-10k,Healthcare
+WDAY,workday.com,over-1b,over-10k,Technology
+XEL,my.xcelenergy.com,over-1b,over-10k,Utilities
+ZM,zoom.us,100m-200m,1k-5k,Technology
+ZS,zscaler.com,100m-200m,1k-5k,Technology
