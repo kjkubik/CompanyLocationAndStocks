@@ -1,0 +1,27 @@
+rough notes for presentation slides
+-----------------------------------------------------
+-- don't overwhelm your audience
+-- remember what you're trying to convey/prove
+
+- looking for 5 - 6 slides?
+
+- overview/purpose slide
+
+- proposed interactive slide:
+	- checking the performance of a stock over the period of a month for the duration of 2 years of data
+
+- "earthquake map" with dots
+- each dot would be placed on the map using latitude/longitude information
+- each dot would contain the following data:
+	- stock ticker
+	- volume weighted average
+	- choose by sector
+	- choose by stock
+	- choose by revenue
+	- choose by employee count/size
+- can we filter the info that shows up per dot?  so initially when the map loads we have some of the data but you can add/take away the data you want to see...
+
+- side note on machine training: 
+- all floats are converted to ints, floats can't be used to train models
+	- don't need to train on latitude and longitude (really only needed for the interactive map), we can just use city as a converted categorical variable
+	
