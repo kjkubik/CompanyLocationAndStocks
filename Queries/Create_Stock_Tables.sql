@@ -75,3 +75,38 @@ CREATE VIEW view_company_all_star AS
           TL.ticker = TDS.ticker
           )
 ;
+
+-- CREATE TABLE begin_stock_price AS (
+-- select date_val, ticker, volume_weight, volume
+-- 	from ticker_daily_stat 
+-- where date_val = '2022-02-01' 
+-- );
+
+-- CREATE TABLE end_stock_price AS (
+-- select date_val, ticker, volume_weight, volume
+-- 	from ticker_daily_stat 
+-- where date_val = '2022-02-15'
+-- );
+
+-- select * from begin_stock_price;
+-- select * from end_stock_price;
+
+-- CREATE TABLE end_stock_price AS (
+-- select
+-- 	CI.ticker,
+--     date_val,	
+	
+-- 	revenue,
+--     sector,
+--     city_name,
+--     state_name,        
+--     country_code,
+-- 	a.ticker, 
+-- 	a.volume_weight, 
+-- 	b.volume_weight, 
+-- 	a.volume_weight/b.volume_weight, --VWA
+-- 	a.volume/b.volume --VA
+-- from begin_stock_price a,
+--      end_stock_price b, 
+	
+-- )
