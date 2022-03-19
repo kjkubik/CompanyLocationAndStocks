@@ -14,8 +14,10 @@ What two questions do we hope to answer?
 ### Resources
 
 What are our data sources?  Where did we get our info form?
+- Ask Armando and Kim what all has been used
 
 What are we using for each portion of the project?
+- Ask Armando and Kim if there are anything we arent using anymore on this list and if anything is new and then format into sections from notes
 - OpenStreetMap
 - Polygon 
 - Python
