@@ -17,13 +17,13 @@ There are multiple pockets in the country that are at risk for becoming modern-d
 1) When investigating the performance of companies by their stocks, do geographical locations have a significant impact in comparison to other factors such as the size of the company or revenue?
 2) Is it necessary to move the locations of headquarters to cities that have high concentrations of other company headquarters within the same sectors in order to improve stock performance?
 
-### Resources
+## Resources
 
-#### Data Sources
+### Data Sources
 What are our data sources?  Where did we get our info form?
 - Ask Armando and Kim what all has been used
 
-#### Technologies
+### Technologies
 What are we using for each portion of the project?
 - Ask Armando and Kim if there are anything we arent using anymore on this list and if anything is new and then format into sections from notes
 - OpenStreetMap
@@ -42,11 +42,11 @@ What are we using for each portion of the project?
 - numpy
 - TensorFlow
 
-### Proposed Structures
+## Proposed Structures
 
-#### Flowchart of Project
+### Flowchart of Project
 
-#### Machine Learning Model
+### Machine Learning Model
 
 We are considering the usage of Random Forest Models and Gradient Boosted Decision Trees.
 
