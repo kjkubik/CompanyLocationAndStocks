@@ -23,6 +23,10 @@ What are our data sources?  Where did we get our info form?
 What are we using for each portion of the project?
 =======
 - Ask Armando and Kim what all has been used
+1. Polygon.io - where all stock prices were retrieved for two years
+2. RapidAPI.com - The API used to get all companies data was - "companies-datas"
+3. finance.yahoo.com - Some sectors found
+4. Geopy - python library used to get Long. and Lat., as well as locations
 
 =======
 
