@@ -3,32 +3,6 @@
 ## Overview
 
 ### Purpose
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 980ea3de88531c1749c44de8a205bd57010377e0
-What is our topic?
-
-Why did we select this topic?
-
-What two questions do we hope to answer?
-1)
-2)
-
-### Resources
-
-What are our data sources?  Where did we get our info form?
-<<<<<<< HEAD
-
-What are we using for each portion of the project?
-=======
-- Ask Armando and Kim what all has been used
-1. Polygon.io - where all stock prices were retrieved for two years
-2. RapidAPI.com - The API used to get all companies data was - "companies-datas"
-3. finance.yahoo.com - Some sectors found
-4. Geopy - python library used to get Long. and Lat., as well as locations
-
-=======
 
 #### Topic
 
@@ -42,46 +16,46 @@ There are multiple pockets in the country that are at risk for becoming modern-d
 
 1) When investigating the performance of companies by their stocks, do geographical locations have a significant impact in comparison to other factors such as the size of the company or revenue?
 2) Is it necessary to move the locations of headquarters to cities that have high concentrations of other company headquarters within the same sectors in order to improve stock performance?
+3) Is how company crowds buy and sell stocks measurable by geographical location? 
+4) Does the geographical location of the home office matter?
 
 ## Resources
 
 ### Data Sources
-What are our data sources?  Where did we get our info form?
-- Ask Armando and Kim what all has been used
+What are our data sources?  Where did we get our info from?
+
+What are we using for each portion of the project?
+1. Polygon.io - where all stock prices were retrieved for two years
+2. RapidAPI.com - The API used to get all companies data was - "companies-datas"
+3. finance.yahoo.com - Some sectors found
+4. Geopy - python library used to get Long. and Lat., as well as locations
 
 ### Technologies
->>>>>>> a1ea6a8c2793ce95a38b0119bebf44bd79ca9ce1
 What are we using for each portion of the project?
-- Ask Armando and Kim if there are anything we arent using anymore on this list and if anything is new and then format into sections from notes
->>>>>>> 980ea3de88531c1749c44de8a205bd57010377e0
-- OpenStreetMap
-- Polygon 
-- Python
-- postgres
-- .csv files
-- JSON
-- JavaScript
-- css
-- html
-- matplotlib
-- pandas
-<<<<<<< HEAD
-- nominatum
-=======
-<<<<<<< HEAD
-- nominatum
-=======
-- nominatim
->>>>>>> a1ea6a8c2793ce95a38b0119bebf44bd79ca9ce1
->>>>>>> 980ea3de88531c1749c44de8a205bd57010377e0
-- geopi
-- numpy
-- TensorFlow
+- Data Collection
+  - OpenStreetMap
+  - .csv files
+  - Polygon
+  - GeoPy
+  - JSON
+  - SQL
+- Data Processing
+  - Python
+  - pandas
+  - SQLAlchemy
+  - Jupyter Notebook
+  - postgreSQL
+- Analysis
+  - NumPy
+  - TensorFlow
+  - SKLearn
+- Presentation
+  - matplotlib
+  - Google Slides
+  - JavaScript
+  - HTML
+  - CSS
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 ## Proposed Structures
 
 ### Data Input Tables
@@ -107,8 +81,6 @@ We are considering training and testing our models on the following features:
 
 We have access to two years worth of data, but in order to not confuse our models with too many features we are considering only using a subset of of this data (maybe certain points in time across the most recent year).
 
->>>>>>> a1ea6a8c2793ce95a38b0119bebf44bd79ca9ce1
->>>>>>> 980ea3de88531c1749c44de8a205bd57010377e0
 ## Team Information
 
 ### Members
@@ -119,17 +91,9 @@ We have access to two years worth of data, but in order to not confuse our model
 - Sarah Wiggins
 
 ### Communication Protocols
-<<<<<<< HEAD
 - Slack
 - Zoom
-=======
-<<<<<<< HEAD
-- Slack
-- Zoom
-=======
 - Slack conversations multiple times a week
 - Zoom calls, both during class/office hours and outside of class 
 - reviews and comments left on GitHub pull requests
->>>>>>> a1ea6a8c2793ce95a38b0119bebf44bd79ca9ce1
->>>>>>> 980ea3de88531c1749c44de8a205bd57010377e0
 
