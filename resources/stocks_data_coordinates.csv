@@ -1,0 +1,103 @@
+,ticker,name,open,close,change,% change,city,state,country,latitude,longitude
+0,AMD,Advanced Micro Devices Inc,111.98,-6.3,,,Santa Clara,CA,US,37.2333253,-121.6846349
+1,ADBE,Adobe Inc.,459.08,-12.1,,,San Jose,CA,US,37.3361905,-121.890583
+2,ABNB,Airbnb Inc,151.69,-5.84,,,San Francisco,CA,US,37.7790262,-122.419906
+3,ALGN,Align Technology Inc,477.45,-18.69,,,Tempe,AZ,US,33.4255056,-111.9400091
+4,AMZN,Amazon.com Inc,2.0,957.97,,,Seattle,WA,US,47.6038321,-122.3300624
+5,AMGN,Amgen Inc,232.64,4.05,,,Thousand Oaks,CA,US,34.1705609,-118.8375937
+6,AEP,American Electric Power Company Inc,93.98,2.74,,,Columbus,OH,US,39.9622601,-83.0007065
+7,ADI,Analog Devices Inc,159.28,-0.54,,,Norwood,MA,US,42.194543,-71.1994976
+8,ANSS,ANSYS Inc,316.24,-7.01,,,Canonsburg,PA,US,40.2625702,-80.1872797
+9,AAPL,Apple Inc,166.23,-0.33,,,Capertino,CA,US,36.167269,-115.245979
+10,AMAT,Applied Materials Inc,130.64,-2.54,,,Santa Clara,CA,US,37.2333253,-121.6846349
+11,ASML,ASML Holding NV,630.79,-24.58,,,Veldhoven,NL,Netherlands,51.40770635,5.392731058176404
+12,TEAM,Atlassian Corporation PLC,286.88,-22.4,,,Sydney,AUS,Australia,-33.91840985,150.99831672965283
+13,ADSK,Autodesk Inc,210.0,-6.51,,,San Rafael,CA,US,37.9735346,-122.5310874
+14,ATVI,Activision Blizzard Inc,81.5,0.02,,,San Monica,CA,US,34.084745,-118.3845421
+15,ADP,Automatic Data Processing Inc,204.7,-1.59,,,Roseland,NJ,US,40.8206555,-74.2937595
+16,AZN,AstraZeneca PLC,60.07,-1.93,,,Cambridge,UK,UK,52.2055314,0.1186637
+17,AVGO,Broadcom Inc,578.6,-7.18,,,San Jose,CA,US,37.3361905,-121.890583
+18,BIDU,Baidu Inc,155.19,-5.38,,,Beijing,CN,CH,39.906217,116.3912757
+19,BIIB,Biogen Inc,211.23,3.44,,,Cambridge,MA,US,42.3750997,-71.1056157
+20,BMRN,Biomarin Pharmaceutical Inc,75.43,-2.72,,,Novato,CA,US,38.1061979,-122.5681191
+21,BKNG,Booking Holdings Inc,2.0,102.06,,,Norwalk,CT,US,41.1175966,-73.4078968
+22,CDNS,Cadence Design Systems Inc,153.94,-3.52,,,San Jose,CA,US,37.3361905,-121.890583
+23,CHTR,Charter Communications Inc,561.82,-9.17,,,Stamford,CT,US,41.0534302,-73.5387341
+24,CPRT,Copart Inc,121.24,-1.62,,,Dallas,TX,US,32.7762719,-96.7968559
+25,CRWD,CrowdStrike Holdings Inc,191.02,-10.73,,,Austin,TX,US,30.2711286,-97.7436995
+26,CTAS,Cintas Corp,378.41,-2.58,,,Cincinnati,OH,US,39.1014537,-84.5124602
+27,CSCO,Cisco Systems Inc,56.07,-0.08,,,San Jose,CA,US,37.3361905,-121.890583
+28,CMCSA,Comcast Corp,47.12,0.74,,,Tupelo,MS,US,34.2576067,-88.7033859
+29,COST,Costco Wholesale Corp,533.05,5.05,,,Issaquah,WA,US,47.5348778,-122.0432974
+30,CSX,CSX Corp,35.29,0.68,,,Jacksonville,FL,US,30.3321838,-81.655651
+31,CTSH,Cognizant Technology Solutions Corp,87.93,-0.26,,,Teaneck,NJ,US,40.8860164,-74.0072568
+32,DDOG,Datadog Inc,148.46,-16.02,,,New York,NY,US,40.7127281,-74.0060152
+33,DOCU,DocuSign Inc,108.66,-5.74,,,San Francisco,CA,US,37.7790262,-122.419906
+34,DXCM,Dexcom Inc,423.95,3.87,,,San Diego,CA,US,32.7174202,-117.1627728
+35,DLTR,Dollar Tree Inc,146.48,6.56,,,Chesapeake,VA,US,36.7183708,-76.2466798
+36,EA,Electronic Arts,127.84,-1.42,,,Redwood City,CA,US,37.4863239,-122.232523
+37,EBAY,eBay Inc,54.42,-0.67,,,San Jose,CA,US,37.3361905,-121.890583
+38,EXC,Exelon Corp,43.13,0.37,,,Chicago,IL,US,41.8755616,-87.6244212
+39,FAST,Fastenal Co,53.15,0.58,,,Winona,MN,US,43.9582272,-91.7807784
+40,FB,Meta Platforms Inc,202.97,-5.14,,,Menlo Park,CA,US,37.4519671,-122.1779927
+41,FISV,Fiserv Inc,98.63,-0.11,,,Brookfield,WI,US,43.0605671,-88.1064787
+42,FTNT,Fortinet Inc,336.35,-8.46,,,Sunnyvale,CA,US,37.3688301,-122.036349
+43,GILD,Gilead Sciences Inc,61.71,0.47,,,Foster City,CA,US,37.5600336,-122.2688522
+44,GOOG,Alphabet Class C,2.0,686.16,,,Mountain View,CA,US,37.3893889,-122.0832101
+45,GOOGL,Alphabet Class A,2.0,677.99,,,Mountain View,CA,US,37.3893889,-122.0832101
+46,HON,Honeywell International Inc,187.52,1.08,,,Charlotte,NC,US,35.2272086,-80.8430827
+47,ILMN,Illumina Inc,331.95,1.76,,,San Diego,CA,US,32.7174202,-117.1627728
+48,INTC,Intel Corp,47.93,-0.94,,,Mountain View,CA,US,37.3893889,-122.0832101
+49,INTU,Intuit Inc,472.7,-13.3,,,Mountain View,CA,US,37.3893889,-122.0832101
+50,ISRG,Intuitive Surgical Inc,299.82,0.81,,,Sunnyvale,CA,US,37.3688301,-122.036349
+51,MRVL,Marvell Technology Inc,65.2,-2.47,,,Wilmington,DE,US,39.7459468,-75.546589
+52,IDXX,IDEXX Laboratories Inc,538.52,-1.45,,,Westbrook,ME,US,43.6763036,-70.3663874
+53,JD,JD.Com Inc,67.83,-3.96,,,Westbrook,ME,US,43.6763036,-70.3663874
+54,KDP,Keurig Dr Pepper Inc,38.61,UNCH,,,Plano,TX,US,33.0136764,-96.6925096
+55,KLAC,KLA Corp,342.53,-3.54,,,Milpitas,CA,US,37.4282771,-121.9069256
+56,KHC,Kraft Heinz Co,39.95,0.88,,,Chicago,IL,US,41.8755616,-87.6244212
+57,LRCX,Lam Research Corp,543.51,-10.51,,,Fremont,CA,US,37.5482697,-121.988571
+58,LCID,Lucid Group Inc,22.63,-1.95,,,Newark,CA,US,37.5296593,-122.0402399
+59,LULU,Lululemon Athletica Inc,322.84,-7.23,,,Vancouver,CAN,CA,49.156692500000005,-122.77402374836214
+60,MELI,Mercadolibre Inc,1.0,96.76,,,Buenos Aires,AR,Argentina,-34.6075682,-58.4370894
+61,MAR,Marriott International Inc,165.47,-2.76,,,Washington,D.C.,US,38.9074322,-77.0350922
+62,MTCH,Match Group Inc,102.99,-6.24,,,Dallas,TX,US,32.7762719,-96.7968559
+63,MCHP,Microchip Technology Inc,69.04,-0.7,,,Chandler,AZ,US,33.3061605,-111.84125
+64,MDLZ,Mondelez International Inc,64.91,0.21,,,Chicago,IL,US,41.8755616,-87.6244212
+65,MRNA,Moderna Inc,141.52,-6.34,,,Cambridge,MA,US,42.3750997,-71.1056157
+66,MNST,Monster Beverage Corp,83.35,-0.4,,,Corona,CA,US,33.8752945,-117.5664449
+67,MSFT,Microsoft Corp,295.92,-4.27,,,Redmond,WA,US,47.6694141,-122.1238767
+68,MU,Micron Technology Inc,89.18,-4.12,,,Boise,ID,US,43.6166163,-116.200886
+69,NFLX,Netflix Inc,368.07,-11.96,,,Los Gatos,CA,US,37.226611,-121.9746797
+70,NTES,NetEase Inc,86.54,-5.84,,,Hangzhou,CN,CN,30.2489634,120.2052342
+71,NVDA,NVIDIA Corp,237.14,-5.06,,,Santa Clara,CA,US,37.2333253,-121.6846349
+72,NXPI,NXP Semiconductors NV,184.7,-3.65,,,Eindhoven,NL,Netherlands,51.4392648,5.478633
+73,OKTA,Okta Inc,167.98,-14.72,,,San Francisco,CA,US,37.7790262,-122.419906
+74,ODFL,Old Dominion Freight Line Inc,324.45,6.48,,,Thomasville,NC,,35.8831786,-80.081817
+75,ORLY,O’Reilly Automotive Inc,684.19,8.32,,,Springfield,MO,,37.2166779,-93.2920373
+76,PCAR,Paccar Inc,91.66,0.02,,,Bellevue,WA,,47.6144219,-122.192337
+77,PANW,Palo Alto Networks Inc,573.41,-8.65,,,Santa Clara,CA,,37.2333253,-121.6846349
+78,PAYX,Paychex Inc,120.42,0.04,,,Rochester,NY,,43.157285,-77.615214
+79,PDD,Pinduoduo Inc,45.22,-3.55,,,Shanghai,CN,CH,31.2322758,121.4692071
+80,PYPL,PayPal Holdings Inc,101.34,-5.27,,,San Jose,CA,,37.3361905,-121.890583
+81,PEP,PepsiCo Inc.,163.27,-0.17,,,Harrison,NY,,41.0195135,-73.71116374834502
+82,QCOM,Qualcomm Inc,165.35,-3.9,,,San Diego,CA,,32.7174202,-117.1627728
+83,REGN,Regeneron Pharmaceuticals Inc,611.15,-5.72,,,Tarrytown,NY,,41.065585999999996,-73.86732932133876
+84,ROST,Ross Stores Inc,93.53,-1.47,,,San Bruno,CA,,37.6261715,-122.4332435
+85,SIRI,Sirius XM Holdings Inc,6.18,0.03,,,New York,NY,,40.7127281,-74.0060152
+86,SGEN,Seagen Inc,126.84,0.16,,,Bothell,WA,,47.7598697,-122.2068288
+87,SPLK,Splunk Inc,121.83,6.91,,,San Francisco,CA,,37.7790262,-122.419906
+88,SWKS,Skyworks Solutions Inc,136.86,0.04,,,Irvine,CA,,33.6856969,-117.8259819
+89,SBUX,Starbucks Corp,91.53,-1.24,,,Seattle,WA,,47.6038321,-122.3300624
+90,SNPS,Synopsys Inc,308.84,-6.48,,,Mountain View,CA,,37.3893889,-122.0832101
+91,TSLA,Tesla Inc,839.29,-40.6,,,Austin,TX,,30.2711286,-97.7436995
+92,TXN,Texas Instruments Inc,171.0,0.9,,,Dallas,TX,,32.7762719,-96.7968559
+93,TMUS,T-Mobile US Inc,123.92,-1.69,,,Bellevue,WA,,47.6144219,-122.192337
+94,VRSN,Verisign Inc,218.73,0.88,,,Reston,VA,,38.9583737,-77.3579805
+95,VRSK,Verisk Analytics Inc,182.68,0.95,,,Jersey City,NJ,,40.7215682,-74.047455
+96,VRTX,Vertex Pharmaceuticals Inc,235.69,1.58,,,Boston,MA,,42.3602534,-71.0582912
+97,WBA,Walgreens Boots Alliance Inc,46.72,0.57,,,Chicago,IL,,41.8755616,-87.6244212
+98,WDAY,Workday Inc,245.37,-3.02,,,Pleasanton,CA,,37.6624312,-121.8746789
+99,XEL,Xcel Energy Inc,69.13,1.57,,,Minneapolis,MN,,44.9772995,-93.2654692
+100,ZM,Zoom Video Communications Inc,113.11,-8.5,,,San Jose,CA,,37.3361905,-121.890583
+101,ZS,Zscaler Inc,242.03,-12.38,,,San Jose,CA,,37.3361905,-121.890583

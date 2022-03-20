@@ -29,22 +29,13 @@ def get_stock_price(output, client_key, ticker, time_span, from_, to):
         for result in resp.results:
             dt = ts_to_datetime(result["t"])
    
-            # print(f"{ticker}, {dt},{result['o']},{result['h']},{result['l']},{result['c']},{result['v']},{result['vw']},"
-            #       f"{result['n']}")
-
             # get values for open and close per result
             opening_val = result['o']
             closing_val = result['c']
-            # print(opening_val)
-            # print(closing_val)
             
-
             # call percentage_change function to calculate percent change between open and close
             percentage_change = get_percentage_change(opening_val,closing_val)
-            #print(percentage_change)
- #           record = f"{ticker}, {dt}, {result['o']}, {result['h']}, {result['l']}, {result['c']}, {result['v']}," \
- #                    f"{result['vw']}, {result['n']}\n"
-
+            
             # create record string
             record = f"{ticker}, {dt}, {result['o']}, {result['h']}, {result['l']}, {result['c']}, {result['v']}," \
                      f"{result['vw']}, {result['n']}, {percentage_change}\n"
@@ -73,7 +64,7 @@ def main():
         record_count = record_count + 1
         stock = row['Ticker']
         
-        if record_count <= 2: 
+        if record_count <= 5: 
             print(f"count less or equal to than 5: {record_count}")
             print(f"going to find ticker: {row['Ticker']} price\n")
 
@@ -82,7 +73,7 @@ def main():
         else: 
             record_count = 1
             print(f"Just changed count to 1 ({record_count}), waiting for a minute.")
-            time.sleep(6) # Sleep for 62 seconds
+            time.sleep(90) # Sleep for 62 seconds
             print(f"okay, going to find ticker: {row['Ticker']} price\n")
 
             get_stock_price(output, stock_key, stock, time_span, from_, to)
