@@ -4,6 +4,9 @@
 
 ### Purpose
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 980ea3de88531c1749c44de8a205bd57010377e0
 What is our topic?
 
 Why did we select this topic?
@@ -15,7 +18,15 @@ What two questions do we hope to answer?
 ### Resources
 
 What are our data sources?  Where did we get our info form?
+<<<<<<< HEAD
+
+What are we using for each portion of the project?
+=======
 - Ask Armando and Kim what all has been used
+1. Polygon.io - where all stock prices were retrieved for two years
+2. RapidAPI.com - The API used to get all companies data was - "companies-datas"
+3. finance.yahoo.com - Some sectors found
+4. Geopy - python library used to get Long. and Lat., as well as locations
 
 =======
 
@@ -42,6 +53,7 @@ What are our data sources?  Where did we get our info form?
 >>>>>>> a1ea6a8c2793ce95a38b0119bebf44bd79ca9ce1
 What are we using for each portion of the project?
 - Ask Armando and Kim if there are anything we arent using anymore on this list and if anything is new and then format into sections from notes
+>>>>>>> 980ea3de88531c1749c44de8a205bd57010377e0
 - OpenStreetMap
 - Polygon 
 - Python
@@ -56,12 +68,18 @@ What are we using for each portion of the project?
 <<<<<<< HEAD
 - nominatum
 =======
+<<<<<<< HEAD
+- nominatum
+=======
 - nominatim
 >>>>>>> a1ea6a8c2793ce95a38b0119bebf44bd79ca9ce1
+>>>>>>> 980ea3de88531c1749c44de8a205bd57010377e0
 - geopi
 - numpy
 - TensorFlow
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 ## Proposed Structures
@@ -90,6 +108,7 @@ We are considering training and testing our models on the following features:
 We have access to two years worth of data, but in order to not confuse our models with too many features we are considering only using a subset of of this data (maybe certain points in time across the most recent year).
 
 >>>>>>> a1ea6a8c2793ce95a38b0119bebf44bd79ca9ce1
+>>>>>>> 980ea3de88531c1749c44de8a205bd57010377e0
 ## Team Information
 
 ### Members
@@ -104,8 +123,13 @@ We have access to two years worth of data, but in order to not confuse our model
 - Slack
 - Zoom
 =======
+<<<<<<< HEAD
+- Slack
+- Zoom
+=======
 - Slack conversations multiple times a week
 - Zoom calls, both during class/office hours and outside of class 
 - reviews and comments left on GitHub pull requests
 >>>>>>> a1ea6a8c2793ce95a38b0119bebf44bd79ca9ce1
+>>>>>>> 980ea3de88531c1749c44de8a205bd57010377e0
 
