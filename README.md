@@ -44,11 +44,28 @@ What are we using for each portion of the project?
 
 ## Proposed Structures
 
+### Data Input Tables
+
+![ERD_proposed.JPG](https://github.com/kjkubik/CompanyLocationAndStocks/blob/main/images/ERD_proposed.JPG)
+
 ### Flowchart of Project
+
+![proposed_flowchart_v1.png](https://github.com/kjkubik/CompanyLocationAndStocks/blob/main/images/proposed_flowchart_v1.png)
 
 ### Machine Learning Model
 
-We are considering the usage of Random Forest Models and Gradient Boosted Decision Trees.
+#### Model Types
+
+We are considering the usage of Random Forest Models and Gradient Boosted Decision Trees.  
+
+#### Training and Testing
+
+We are considering training and testing our models on the following features:
+- company geolocations
+- size of company (number of employees)
+- company revenue
+
+We have access to two years worth of data, but in order to not confuse our models with too many features we are considering only using a subset of of this data (maybe certain points in time across the most recent year).
 
 ## Team Information
 
