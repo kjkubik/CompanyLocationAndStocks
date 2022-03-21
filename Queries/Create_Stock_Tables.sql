@@ -75,6 +75,8 @@ CREATE VIEW view_company_all_star AS
           TL.ticker = TDS.ticker
           )
 ;
+<<<<<<< HEAD
+=======
 
 -- CREATE TABLE begin_stock_price AS (
 -- select date_val, ticker, volume_weight, volume
@@ -110,3 +112,4 @@ CREATE VIEW view_company_all_star AS
 --      end_stock_price b, 
 	
 -- )
+>>>>>>> a1ea6a8c2793ce95a38b0119bebf44bd79ca9ce1
