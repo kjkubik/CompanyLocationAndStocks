@@ -60,7 +60,7 @@ What are we using for each portion of the project?
 
 ### Data Input Tables
 
-![ERD_proposed.JPG](https://github.com/kjkubik/CompanyLocationAndStocks/blob/main/images/ERD_proposed.JPG)
+![ERD_proposed.JPG](https://github.com/kjkubik/CompanyLocationAndStocks/blob/main/images/ERD_proposed_Deliverable_1.JPG)
 
 ### Flowchart of Project
 
@@ -91,8 +91,6 @@ We have access to two years worth of data, but in order to not confuse our model
 - Sarah Wiggins
 
 ### Communication Protocols
-- Slack
-- Zoom
 - Slack conversations multiple times a week
 - Zoom calls, both during class/office hours and outside of class 
 - reviews and comments left on GitHub pull requests
