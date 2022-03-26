@@ -62,6 +62,8 @@ What are we using for each portion of the project?
 
 ![ERD_proposed.JPG](https://github.com/kjkubik/CompanyLocationAndStocks/blob/main/images/ERD_proposed_Deliverable_1.JPG)
 
+ADD ADDITIONAL TABLES HERE
+
 ### Flowchart of Project
 
 ![proposed_flowchart_v1.png](https://github.com/kjkubik/CompanyLocationAndStocks/blob/main/images/proposed_flowchart_v1.png)
@@ -80,6 +82,30 @@ We are considering training and testing our models on the following features:
 - company revenue
 
 We have access to two years worth of data, but in order to not confuse our models with too many features we are considering only using a subset of of this data (maybe certain points in time across the most recent year).
+
+ADD DESCRIPTION OF HOW DATA WAS SPLIT INTO TRAINING AND TESTING SETS
+
+#### Description of Preprocessing
+
+#### Preliminary Feature Engineering and Feature Selection
+
+#### Limitations and Benefits of Model
+
+### Data Exploration and Analysis
+
+#### Data Exploration
+
+#### Analysis Phase
+
+### Proposed Dashboard
+
+We are proposing the following blueprint for our presentation portion on Google Slides MARK WHICH SLIDES WILL HAVE INTERACTIVE ELEMENTS:
+1)
+2)
+3)
+4)
+5)
+6)
 
 ## Team Information
 
