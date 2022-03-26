@@ -7,6 +7,7 @@ config2.py
 __pycache__
 coordinates/SECTORS_edit.csv
 source/compcom_edit.csv
+source/.DS_Store
 =======
 .DS_Store
 >>>>>>> d799b76109c20e2c92ed2bfd0e0288d593e0f780
