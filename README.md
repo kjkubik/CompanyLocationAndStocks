@@ -55,12 +55,15 @@ What are we using for each portion of the project?
   - JavaScript
   - HTML
   - CSS
+  - Tableau
 
 ## Proposed Structures
 
 ### Data Input Tables
 
 ![ERD_proposed.JPG](https://github.com/kjkubik/CompanyLocationAndStocks/blob/main/images/ERD_proposed_Deliverable_1.JPG)
+
+ADD ADDITIONAL TABLES HERE
 
 ### Flowchart of Project
 
@@ -80,6 +83,36 @@ We are considering training and testing our models on the following features:
 - company revenue
 
 We have access to two years worth of data, but in order to not confuse our models with too many features we are considering only using a subset of of this data (maybe certain points in time across the most recent year).
+
+ADD DESCRIPTION OF HOW DATA WAS SPLIT INTO TRAINING AND TESTING SETS
+
+#### Description of Preprocessing
+
+#### Preliminary Feature Engineering and Feature Selection
+
+#### Limitations and Benefits of Model
+
+### Data Exploration and Analysis
+
+#### Data Exploration
+
+#### Analysis Phase
+
+### Proposed Dashboard
+
+We are proposing the following blueprint for our presentation portion on Google Slides:
+1) overview of our project
+ - what we chose for our topic
+ - why we chose it
+ - what we hoped to learn from it
+2) how did we go through our process
+3) explain the model we used and why we said this worked as opposed to other model choices
+4) show the results of the model that we used
+5) closing thoughts
+ - what we learned about what impacts stock performance and what doesn't
+ - some graphs showing our analysis to play with 
+ 
+[Link to Dashboard](https://public.tableau.com/app/profile/sarah.wiggins/viz/FinalProjectVisuals_16483188121560/Sheet5?publish=yes)
 
 ## Team Information
 
