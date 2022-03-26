@@ -111,6 +111,8 @@ We are proposing the following blueprint for our presentation portion on Google 
 5) closing thoughts
  - what we learned about what impacts stock performance and what doesn't
  - some graphs showing our analysis to play with 
+ 
+[Link to Dashboard](https://public.tableau.com/app/profile/sarah.wiggins/viz/FinalProjectVisuals_16483188121560/Sheet5?publish=yes)
 
 ## Team Information
 
