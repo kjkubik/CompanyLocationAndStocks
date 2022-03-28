@@ -81,33 +81,126 @@ There are multiple pockets in the country that are at risk for becoming modern-d
 - Each individual data set was saved into a CSV file 
 - Cleanup was done on each data set to confirm there were no missing values
 - The datasets were then imported into Postgres 
-- An additional table was created to represent the city/state locaitons of the companies as regions within the country
+- An additional table was created to represent the city/state locations of the companies as regions within the country
 - The tables created for each were then joined into a master table to hold all data
 - The data was then brought into Jupyter Notebook for additional processing and analysis
 
-#### Analysis Phase
-
-#### Preliminary Feature Engineering and Feature Selection
-
 ### Machine Learning Model
-
-#### Model Types
 
 We are considering the usage of Random Forest Models and Gradient Boosted Decision Trees.  
 
-#### Training and Testing
+#### Intended Training and Testing 	
 
-We are considering training and testing our models on the following features:
+We are considering training and testing our models primarily on the following features:
 - most recent stock performance history
 - company geolocations
 - size of company (number of employees)
 - company revenue
 
-We have access to two years worth of data, but in order to not confuse our models with too many features we are considering only using a subset of of this data (maybe certain points in time across the most recent year).
+Additional feature types have been considered experimentally to help improve the accuracy of our models.
 
-ADD DESCRIPTION OF HOW DATA WAS SPLIT INTO TRAINING AND TESTING SETS
+While we have access to two years worth of data, but in order to not confuse our models with too many features we are considering only using a subset of of this data (maybe certain points in time across the most recent year).
 
-#### Limitations and Benefits of Model
+#### Model Type - Random Forest 
+
+Feature Selection:
+- STOCK HISTORY
+```
+begin_date = '2022-01-01'
+end_date = '2022-03-12'
+day_range_of_iter = 2
+```
+
+Engineering Features:
+```
+n_estimators=3000, max_depth=15, min_samples_leaf=10, random_state=1 
+```
+
+Limitations and Benefits of Model:
+
+
+#### Model Type - Gradient Boosted Decision Trees 
+
+Feature Selection (attempt 1):
+- REGION
+- COUNTRY CODE
+- PERCENT_CHANGE_VOLUME (calculated)
+- PERCENT_CHANGE_VOLUME_WEIGHT (calculated)
+
+Feature Selection (attempt 2):
+- REGION
+- COUNTRY CODE
+- EMPLOYEE COUNT (added)
+- REVENUE (added)
+- SECTOR (added)
+- PERCENT_CHANGE_VOLUME (calculated)
+- PERCENT_CHANGE_VOLUME_WEIGHT (calculated)
+
+Engineering Features (attempt 1):
+```
+regressor = GradientBoostingRegressor(
+max_depth=10,
+n_estimators=2500,
+learning_rate=.001
+)
+regressor.fit(X_train, y_train)
+
+best_regressor = GradientBoostingRegressor(
+     max_depth=10,
+     n_estimators=best_n_estimators,
+     learning_rate=.01
+)
+```
+
+Engineering Features (attempt 2):
+```
+regressor = GradientBoostingRegressor(
+max_depth=16,
+n_estimators=500,
+learning_rate=.01,
+criterion='mse', # ‘mse’, ‘mae’
+)
+
+best_regressor = GradientBoostingRegressor(
+     max_depth=15,
+     n_estimators=best_n_estimators,
+     learning_rate=.01
+)
+```
+
+Limitations and Benefits of Model:
+
+
+### Analysis Phase
+
+Results of initial attempts with Random Forest Model:
+```
+r2 Score: 0.26188752627863454
+mean absolute error: 0.5406947967061854
+mean squared error: 0.9034786131604057
+```
+
+Results of initial attempts with GBDT (attempt 1):
+```
+r2 Score: 0.26188752627863454
+mean absolute error: 0.5406947967061854
+mean squared error: 0.9034786131604057
+```
+
+Results of initial attempts with GBDT (attempt 2):
+```
+r2_score:  0.2402913633123388
+mean_absolute_error 1.7237831788579878
+mean_squared_error:  6.0706505975617935
+begin_date:  2022-03-01
+end_date:  2022-03-03
+day_range_of_iter:  2
+```
+
+We've made multiple attempts to work with the different model types we wanted to use for accurate predictions, but ultimately it became apparent that we have not been going in the right direction.  We will need to rework our models to ensure that:
+
+1) Our models are providing results that are accurate
+2) The results of our model hold meaning when it comes to answering our questions
 
 ### Proposed Dashboard
 
