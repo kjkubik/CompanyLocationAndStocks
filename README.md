@@ -244,7 +244,7 @@ We've made multiple attempts to work with the different model types we wanted to
 - a timeline of stock performance over the course of a year 
 - a real-time model prediction
  
-[Link to Dashboard](https://public.tableau.com/app/profile/sarah.wiggins/viz/FinalProjectVisuals_16483188121560/Sheet5?publish=yes)
+[Link to Dashboard Blueprint on Google Slides](https://docs.google.com/presentation/d/1VUozX3sSfn4fqPxC4eFu0Whxek4CmRm0aLV6OSVnyMs/edit?usp=sharing)
 
 ## Team Information
 
