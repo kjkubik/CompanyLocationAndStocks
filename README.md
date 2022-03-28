@@ -28,6 +28,13 @@ There are multiple pockets in the country that are at risk for becoming modern-d
 3. finance.yahoo.com - Some sectors found
 4. Geopy - python library used to get Long. and Lat., as well as locations
 
+- Code used to record company stock price data: [link](https://github.com/kjkubik/CompanyLocationAndStocks/blob/main/source/Get_Stock_Price.py)
+- Code used to record company online information data: [link](https://github.com/kjkubik/CompanyLocationAndStocks/blob/main/source/Get_Companies_Datas.ipynb)
+- Code used to record company revenue and size data: [link](https://github.com/kjkubik/CompanyLocationAndStocks/blob/main/getting_coordinates/Size_Revenue_Extract-FINAL.ipynb)
+- Code used to record company geolocation data: [link](https://github.com/kjkubik/CompanyLocationAndStocks/blob/main/getting_coordinates/coordinate_acqusition_FINAL.ipynb)
+
+Additional information that was required was searched manually online by the team.
+
 ### Technologies
 
 - Data Collection
@@ -213,9 +220,10 @@ We've made multiple attempts to work with the different model types we wanted to
 1) Our models are providing results that are accurate
 2) The results of our model hold meaning when it comes to answering our questions
 
-### Proposed Dashboard
+### Dashboard
 
-We are proposing the following blueprint for our presentation:
+#### Proposed Blueprint
+
 1) overview of our project
  - what we chose for our topic
  - why we chose it
@@ -226,6 +234,10 @@ We are proposing the following blueprint for our presentation:
 5) closing thoughts
  - what we learned about what impacts stock performance and what doesn't
  - some graphs showing our analysis to play with 
+ 
+#### Proposed Tools
+
+#### Proposed Interactive Elements
  
 [Link to Dashboard](https://public.tableau.com/app/profile/sarah.wiggins/viz/FinalProjectVisuals_16483188121560/Sheet5?publish=yes)
 
