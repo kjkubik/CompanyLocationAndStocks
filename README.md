@@ -170,7 +170,7 @@ regressor = GradientBoostingRegressor(
 max_depth=16,
 n_estimators=500,
 learning_rate=.01,
-criterion='mse', # ‘mse’, ‘mae’
+criterion='mse', # â€˜mseâ€™, â€˜maeâ€™
 )
 
 best_regressor = GradientBoostingRegressor(
@@ -244,7 +244,7 @@ We've made multiple attempts to work with the different model types we wanted to
 - a timeline of stock performance over the course of a year 
 - a real-time model prediction
  
-[Link to Dashboard Blueprint on Google Slides](https://docs.google.com/presentation/d/1VUozX3sSfn4fqPxC4eFu0Whxek4CmRm0aLV6OSVnyMs/edit?usp=sharing)
+[Link to Dashboard Blueprint on Google Slides](https://docs.google.com/presentation/d/1Ba3gmKklCVN2otC5pc2Kn4WpOq4Y6fFR9MD8k987sy4/edit?usp=sharing)
 
 ## Team Information
 
