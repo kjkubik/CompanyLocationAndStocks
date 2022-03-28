@@ -22,16 +22,14 @@ There are multiple pockets in the country that are at risk for becoming modern-d
 ## Resources
 
 ### Data Sources
-What are our data sources?  Where did we get our info from?
 
-What are we using for each portion of the project?
 1. Polygon.io - where all stock prices were retrieved for two years
 2. RapidAPI.com - The API used to get all companies data was - "companies-datas"
 3. finance.yahoo.com - Some sectors found
 4. Geopy - python library used to get Long. and Lat., as well as locations
 
 ### Technologies
-What are we using for each portion of the project?
+
 - Data Collection
   - OpenStreetMap
   - .csv files
@@ -39,16 +37,19 @@ What are we using for each portion of the project?
   - GeoPy
   - JSON
   - SQL
+  
 - Data Processing
   - Python
   - pandas
   - SQLAlchemy
   - Jupyter Notebook
   - postgreSQL
+  
 - Analysis
   - NumPy
   - TensorFlow
   - SKLearn
+  
 - Presentation
   - matplotlib
   - Google Slides
@@ -61,13 +62,32 @@ What are we using for each portion of the project?
 
 ### Data Input Tables
 
-![ERD_proposed.JPG](https://github.com/kjkubik/CompanyLocationAndStocks/blob/main/images/ERD_proposed_Deliverable_1.JPG)
-
-ADD ADDITIONAL TABLES HERE
+![ERD_proposed_Deliverable_2.png](https://github.com/kjkubik/CompanyLocationAndStocks/blob/main/images/ERD_proposed_Deliverable_2.png)
 
 ### Flowchart of Project
 
 ![proposed_flowchart_v1.png](https://github.com/kjkubik/CompanyLocationAndStocks/blob/main/images/proposed_flowchart_v1.png)
+
+### Data Exploration and Analysis
+
+#### Data Exploration
+
+- We collected two years worth of history regarding the top 100 performing stocks in the US Market, ending in March of 2022
+- We collected geolocation data of all of the headquarters of each company 
+- We collected specific information regarding each of the company regarding their revenues and sizes (number of employees)
+
+#### Description of Preprocessing
+
+- Each individual data set was saved into a CSV file 
+- Cleanup was done on each data set to confirm there were no missing values
+- The datasets were then imported into Postgres 
+- An additional table was created to represent the city/state locaitons of the companies as regions within the country
+- The tables created for each were then joined into a master table to hold all data
+- The data was then brought into Jupyter Notebook for additional processing and analysis
+
+#### Analysis Phase
+
+#### Preliminary Feature Engineering and Feature Selection
 
 ### Machine Learning Model
 
@@ -78,6 +98,7 @@ We are considering the usage of Random Forest Models and Gradient Boosted Decisi
 #### Training and Testing
 
 We are considering training and testing our models on the following features:
+- most recent stock performance history
 - company geolocations
 - size of company (number of employees)
 - company revenue
@@ -86,21 +107,11 @@ We have access to two years worth of data, but in order to not confuse our model
 
 ADD DESCRIPTION OF HOW DATA WAS SPLIT INTO TRAINING AND TESTING SETS
 
-#### Description of Preprocessing
-
-#### Preliminary Feature Engineering and Feature Selection
-
 #### Limitations and Benefits of Model
-
-### Data Exploration and Analysis
-
-#### Data Exploration
-
-#### Analysis Phase
 
 ### Proposed Dashboard
 
-We are proposing the following blueprint for our presentation portion on Google Slides:
+We are proposing the following blueprint for our presentation:
 1) overview of our project
  - what we chose for our topic
  - why we chose it
