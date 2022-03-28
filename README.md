@@ -103,6 +103,8 @@ While we have access to two years worth of data, but in order to not confuse our
 
 #### Model Type - Random Forest 
 
+[Link to Code](https://github.com/kjkubik/CompanyLocationAndStocks/blob/main/source/random_forest_v3_1C.ipynb)
+
 Feature Selection:
 - STOCK HISTORY
 ```
@@ -116,10 +118,13 @@ Engineering Features:
 n_estimators=3000, max_depth=15, min_samples_leaf=10, random_state=1 
 ```
 
-Limitations and Benefits of Model:
-
-
 #### Model Type - Gradient Boosted Decision Trees 
+
+Attempt 1:
+[Link to Code](https://github.com/kjkubik/CompanyLocationAndStocks/blob/main/source/Run_GBDT_Model-OnlyLocationConsidered.ipynb)
+
+Attempt 2:
+[Link to Code](https://github.com/kjkubik/CompanyLocationAndStocks/blob/main/source/Run_GBDT_Model-MOREFeaturesBesidesLocation.ipynb)
 
 Feature Selection (attempt 1):
 - REGION
@@ -168,8 +173,14 @@ best_regressor = GradientBoostingRegressor(
 )
 ```
 
-Limitations and Benefits of Model:
+#### Limitations and Benefits of Models
 
+At this time it is difficult to determine fully what our limitations and benefits are to the models we've chosen, as we are working properly with model types for the first time.  With more time and research, we should be able to experiment with our features and learn more about what the model types can really provide for us given our chosen datasets.
+
+Some general notes:
+
+- Random Forest Models are great at providing accurate results because of reducing overfitting and variance, but the more trees that are added to the model the more ineffective and slow it performs for real-time predictions.
+- Gradient Boosting as a whole also provides accurate results and is great at handling missing data or data that hasn't been necessarily pre-processed, but is prone to overfitting and placing emphasis outliers.
 
 ### Analysis Phase
 
