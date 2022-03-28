@@ -223,7 +223,6 @@ We've made multiple attempts to work with the different model types we wanted to
 ### Dashboard
 
 #### Proposed Blueprint
-
 1) overview of our project
  - what we chose for our topic
  - why we chose it
@@ -236,8 +235,14 @@ We've made multiple attempts to work with the different model types we wanted to
  - some graphs showing our analysis to play with 
  
 #### Proposed Tools
+- Mapbox API
+- HTML, CSS
+- GeoJSON
 
 #### Proposed Interactive Elements
+- a geolocation heatmap to show hotspots of companies in the country per sector
+- a timeline of stock performance over the course of a year 
+- a real-time model prediction
  
 [Link to Dashboard](https://public.tableau.com/app/profile/sarah.wiggins/viz/FinalProjectVisuals_16483188121560/Sheet5?publish=yes)
 
