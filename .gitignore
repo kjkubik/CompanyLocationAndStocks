@@ -1,16 +1,14 @@
 # Adding config.py file
 config.py
-<<<<<<< HEAD
-config2.py
 .DS_Store
+config.js
 .ipynb_checkpoints
 __pycache__
 coordinates/SECTORS_edit.csv
 source/compcom_edit.csv
 source/.DS_Store
-=======
-.DS_Store
->>>>>>> d799b76109c20e2c92ed2bfd0e0288d593e0f780
+1:03
+config2.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
