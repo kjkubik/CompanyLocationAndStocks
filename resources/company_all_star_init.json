@@ -1,0 +1,1022 @@
+[
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Advanced Micro Devices Inc",
+      "city_name": "Santa Clara",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 4.02843601895734,
+      "coordinates": "37.2333253, -121.6846349"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Adobe Inc.",
+      "city_name": "San Jose",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 7.22960879570442,
+      "coordinates": "37.3361905, -121.890583"
+   },
+   {
+      "date_val": "2020-06-02",
+      "company_name": "American Electric Power Company Inc",
+      "city_name": "Columbus",
+      "state_name": "OH",
+      "region": "MW",
+      "country_code": "US",
+      "percent_change": 0.787857722164283,
+      "coordinates": "39.9622601, -83.0007065"
+   },
+   {
+      "date_val": "2020-12-09",
+      "company_name": "Airbnb Inc",
+      "city_name": "San Francisco",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 0.883561643835611,
+      "coordinates": "37.7790262, -122.419906"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Align Technology Inc",
+      "city_name": "Tempe",
+      "state_name": "AZ",
+      "region": "SW",
+      "country_code": "US",
+      "percent_change": 3.09473684210526,
+      "coordinates": "33.4255056, -111.9400091"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Amazon.com Inc",
+      "city_name": "Seattle",
+      "state_name": "WA",
+      "region": "NW",
+      "country_code": "US",
+      "percent_change": 1.70940170940171,
+      "coordinates": "47.6038321, -122.3300624"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Amgen Inc",
+      "city_name": "Thousand Oaks",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 6.50295109612142,
+      "coordinates": "34.1705609, -118.8375937"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Analog Devices Inc",
+      "city_name": "Norwood",
+      "state_name": "MA",
+      "region": "SE",
+      "country_code": "US",
+      "percent_change": 5.17495784148399,
+      "coordinates": "42.194543, -71.1994976"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "ANSYS Inc",
+      "city_name": "Canonsburg",
+      "state_name": "PA",
+      "region": "SE",
+      "country_code": "US",
+      "percent_change": 9.49767441860465,
+      "coordinates": "40.2625702, -80.1872797"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Apple Inc",
+      "city_name": "Capertino",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 4.93789875042472,
+      "coordinates": "36.167269, -115.245979"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Applied Materials Inc",
+      "city_name": "Santa Clara",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 4.56133141565646,
+      "coordinates": "37.2333253, -121.6846349"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "ASML Holding NV",
+      "city_name": "Veldhoven",
+      "state_name": "NL",
+      "region": "NL",
+      "country_code": "Netherlands",
+      "percent_change": 0.0427915661713272,
+      "coordinates": "51.40770635, 5.392731058"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Atlassian Corporation PLC",
+      "city_name": "Sydney",
+      "state_name": "AUS",
+      "region": "AU",
+      "country_code": "Australia",
+      "percent_change": 1.02119758626025,
+      "coordinates": "-33.91840985, 150.9983167"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Autodesk Inc",
+      "city_name": "San Rafael",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 8.23972602739726,
+      "coordinates": "37.9735346, -122.5310874"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Activision Blizzard Inc",
+      "city_name": "San Monica",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 3.57894736842105,
+      "coordinates": "34.084745, -118.3845421"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Automatic Data Processing Inc",
+      "city_name": "Roseland",
+      "state_name": "NJ",
+      "region": "NE",
+      "country_code": "US",
+      "percent_change": 5.48215198189648,
+      "coordinates": "40.8206555, -74.2937595"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "AstraZeneca PLC",
+      "city_name": "Cambridge",
+      "state_name": "UK",
+      "region": "GB",
+      "country_code": "UK",
+      "percent_change": 1.70796247293722,
+      "coordinates": "52.2055314, 0.1186637"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Broadcom Inc",
+      "city_name": "San Jose",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 3.86465932019246,
+      "coordinates": "37.3361905, -121.890583"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Baidu Inc",
+      "city_name": "Beijing",
+      "state_name": "CN",
+      "region": "CH",
+      "country_code": "CH",
+      "percent_change": 4.22118231305509,
+      "coordinates": "39.906217, 116.3912757"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Biogen Inc",
+      "city_name": "Cambridge",
+      "state_name": "MA",
+      "region": "SE",
+      "country_code": "US",
+      "percent_change": 9.33939958443792,
+      "coordinates": "42.3750997, -71.1056157"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Biomarin Pharmaceutical Inc",
+      "city_name": "Novato",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 5.625,
+      "coordinates": "38.1061979, -122.5681191"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Booking Holdings Inc",
+      "city_name": "Norwalk",
+      "state_name": "CT",
+      "region": "NE",
+      "country_code": "US",
+      "percent_change": 6.32330939557151,
+      "coordinates": "41.1175966, -73.4078968"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Cadence Design Systems Inc",
+      "city_name": "San Jose",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 5.38124156545209,
+      "coordinates": "37.3361905, -121.890583"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Charter Communications Inc",
+      "city_name": "Stamford",
+      "state_name": "CT",
+      "region": "NE",
+      "country_code": "US",
+      "percent_change": 1.72684106790897,
+      "coordinates": "41.0534302, -73.5387341"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Copart Inc",
+      "city_name": "Dallas",
+      "state_name": "TX",
+      "region": "SE",
+      "country_code": "US",
+      "percent_change": 2.25730508239857,
+      "coordinates": "32.7762719, -96.7968559"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "CrowdStrike Holdings Inc",
+      "city_name": "Austin",
+      "state_name": "TX",
+      "region": "SE",
+      "country_code": "US",
+      "percent_change": 0.877192982456144,
+      "coordinates": "30.2711286, -97.7436995"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Cintas Corp",
+      "city_name": "Cincinnati",
+      "state_name": "OH",
+      "region": "MW",
+      "country_code": "US",
+      "percent_change": 4.42872454448018,
+      "coordinates": "39.1014537, -84.5124602"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Cisco Systems Inc",
+      "city_name": "San Jose",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 6.99260943718022,
+      "coordinates": "37.3361905, -121.890583"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Comcast Corp",
+      "city_name": "Tupelo",
+      "state_name": "MS",
+      "region": "SE",
+      "country_code": "US",
+      "percent_change": 8.55644493513663,
+      "coordinates": "34.2576067, -88.7033859"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Costco Wholesale Corp",
+      "city_name": "Issaquah",
+      "state_name": "WA",
+      "region": "NW",
+      "country_code": "US",
+      "percent_change": 4.65325624069522,
+      "coordinates": "47.5348778, -122.0432974"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "CSX Corp",
+      "city_name": "Jacksonville",
+      "state_name": "FL",
+      "region": "SE",
+      "country_code": "US",
+      "percent_change": 2.54867707730456,
+      "coordinates": "30.3321838, -81.655651"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Cognizant Technology Solutions Corp",
+      "city_name": "Teaneck",
+      "state_name": "NJ",
+      "region": "NE",
+      "country_code": "US",
+      "percent_change": 1.95698508041077,
+      "coordinates": "40.8860164, -74.0072568"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Datadog Inc",
+      "city_name": "New York",
+      "state_name": "NY",
+      "region": "SE",
+      "country_code": "US",
+      "percent_change": 2.05555555555556,
+      "coordinates": "40.7127281, -74.0060152"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "DocuSign Inc",
+      "city_name": "San Francisco",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 3.06584910690482,
+      "coordinates": "37.7790262, -122.419906"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Dexcom Inc",
+      "city_name": "San Diego",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 4.79868913857677,
+      "coordinates": "32.7174202, -117.1627728"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Dollar Tree Inc",
+      "city_name": "Chesapeake",
+      "state_name": "VA",
+      "region": "SE",
+      "country_code": "US",
+      "percent_change": 2.0073740270381,
+      "coordinates": "36.7183708, -76.2466798"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Electronic Arts",
+      "city_name": "Redwood City",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 1.70143812031597,
+      "coordinates": "37.4863239, -122.232523"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "eBay Inc",
+      "city_name": "San Jose",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 1.62083936324166,
+      "coordinates": "37.3361905, -121.890583"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Exelon Corp",
+      "city_name": "Chicago",
+      "state_name": "IL",
+      "region": "MW",
+      "country_code": "US",
+      "percent_change": 0.580873401562287,
+      "coordinates": "41.8755616, -87.6244212"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Fastenal Co",
+      "city_name": "Winona",
+      "state_name": "MN",
+      "region": "MW",
+      "country_code": "US",
+      "percent_change": 3.93292682926831,
+      "coordinates": "43.9582272, -91.7807784"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Meta Platforms Inc",
+      "city_name": "Menlo Park",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 4.12768299394607,
+      "coordinates": "37.4519671, -122.1779927"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Fiserv Inc",
+      "city_name": "Brookfield",
+      "state_name": "WI",
+      "region": "NW",
+      "country_code": "US",
+      "percent_change": 3.25479233226838,
+      "coordinates": "43.0605671, -88.1064787"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Fortinet Inc",
+      "city_name": "Sunnyvale",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 2.64563408272264,
+      "coordinates": "37.3688301, -122.036349"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Gilead Sciences Inc",
+      "city_name": "Foster City",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 1.64048380369805,
+      "coordinates": "37.5600336, -122.2688522"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Alphabet Class C",
+      "city_name": "Mountain View",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 3.45462256149279,
+      "coordinates": "37.3893889, -122.0832101"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Alphabet Class A",
+      "city_name": "Mountain View",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 3.34300717452914,
+      "coordinates": "37.3893889, -122.0832101"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Honeywell International Inc",
+      "city_name": "Charlotte",
+      "state_name": "NC",
+      "region": "SE",
+      "country_code": "US",
+      "percent_change": 5.1072810411537,
+      "coordinates": "35.2272086, -80.8430827"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Illumina Inc",
+      "city_name": "San Diego",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 0.344041629037118,
+      "coordinates": "32.7174202, -117.1627728"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Intel Corp",
+      "city_name": "Mountain View",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 12.7849150435143,
+      "coordinates": "37.3893889, -122.0832101"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Intuit Inc",
+      "city_name": "Mountain View",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 4.5,
+      "coordinates": "37.3893889, -122.0832101"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Intuitive Surgical Inc",
+      "city_name": "Sunnyvale",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 1.47480314515891,
+      "coordinates": "37.3688301, -122.036349"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Marvell Technology Inc",
+      "city_name": "Wilmington",
+      "state_name": "DE",
+      "region": "NE",
+      "country_code": "US",
+      "percent_change": 0.28790786948176,
+      "coordinates": "39.7459468, -75.546589"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "IDEXX Laboratories Inc",
+      "city_name": "Westbrook",
+      "state_name": "ME",
+      "region": "SE",
+      "country_code": "US",
+      "percent_change": 4.37764362859841,
+      "coordinates": "43.6763036, -70.3663874"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "JD.Com Inc",
+      "city_name": "Westbrook",
+      "state_name": "ME",
+      "region": "SE",
+      "country_code": "US",
+      "percent_change": 3.16995854669592,
+      "coordinates": "43.6763036, -70.3663874"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Keurig Dr Pepper Inc",
+      "city_name": "Plano",
+      "state_name": "TX",
+      "region": "SE",
+      "country_code": "US",
+      "percent_change": 1.17894736842106,
+      "coordinates": "33.0136764, -96.6925096"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "KLA Corp",
+      "city_name": "Milpitas",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 9.44887818099685,
+      "coordinates": "37.4282771, -121.9069256"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Kraft Heinz Co",
+      "city_name": "Chicago",
+      "state_name": "IL",
+      "region": "MW",
+      "country_code": "US",
+      "percent_change": 12.8531073446328,
+      "coordinates": "41.8755616, -87.6244212"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Lam Research Corp",
+      "city_name": "Fremont",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 3.06299212598424,
+      "coordinates": "37.5482697, -121.988571"
+   },
+   {
+      "date_val": "2021-07-25",
+      "company_name": "Lucid Group Inc",
+      "city_name": "Newark",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 6.29952456418384,
+      "coordinates": "37.5296593, -122.0402399"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Lululemon Athletica Inc",
+      "city_name": "Vancouver",
+      "state_name": "CAN",
+      "region": "CA",
+      "country_code": "CA",
+      "percent_change": 0.48322910744741,
+      "coordinates": "49.1566925, -122.7740237"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Mercadolibre Inc",
+      "city_name": "Buenos Aires",
+      "state_name": "AR",
+      "region": "SE",
+      "country_code": "Argentina",
+      "percent_change": 0.235765207791498,
+      "coordinates": "-34.6075682, -58.4370894"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Marriott International Inc",
+      "city_name": "Washington",
+      "state_name": "D.C.",
+      "region": "SE",
+      "country_code": "US",
+      "percent_change": 2.66720961009875,
+      "coordinates": "38.9074322, -77.0350922"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Match Group Inc",
+      "city_name": "Dallas",
+      "state_name": "TX",
+      "region": "SE",
+      "country_code": "US",
+      "percent_change": 1.46014995181799,
+      "coordinates": "32.7762719, -96.7968559"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Microchip Technology Inc",
+      "city_name": "Chandler",
+      "state_name": "AZ",
+      "region": "SW",
+      "country_code": "US",
+      "percent_change": 4.82397003745318,
+      "coordinates": "33.3061605, -111.84125"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Mondelez International Inc",
+      "city_name": "Chicago",
+      "state_name": "IL",
+      "region": "MW",
+      "country_code": "US",
+      "percent_change": 2.57856567284448,
+      "coordinates": "41.8755616, -87.6244212"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Moderna Inc",
+      "city_name": "Cambridge",
+      "state_name": "MA",
+      "region": "SE",
+      "country_code": "US",
+      "percent_change": 7.39130434782608,
+      "coordinates": "42.3750997, -71.1056157"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Monster Beverage Corp",
+      "city_name": "Corona",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 4.33110367892977,
+      "coordinates": "33.8752945, -117.5664449"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Microsoft Corp",
+      "city_name": "Redmond",
+      "state_name": "WA",
+      "region": "NW",
+      "country_code": "US",
+      "percent_change": 7.6813559322034,
+      "coordinates": "47.6694141, -122.1238767"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Micron Technology Inc",
+      "city_name": "Boise",
+      "state_name": "ID",
+      "region": "NW",
+      "country_code": "US",
+      "percent_change": 3.41592494587443,
+      "coordinates": "43.6166163, -116.200886"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Netflix Inc",
+      "city_name": "Los Gatos",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 1.75032525490909,
+      "coordinates": "37.226611, -121.9746797"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "NetEase Inc",
+      "city_name": "Hangzhou",
+      "state_name": "CN",
+      "region": "CH",
+      "country_code": "CN",
+      "percent_change": 1.72348003052658,
+      "coordinates": "30.2489634, 120.2052342"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "NVIDIA Corp",
+      "city_name": "Santa Clara",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 4.48590021691974,
+      "coordinates": "37.2333253, -121.6846349"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "NXP Semiconductors NV",
+      "city_name": "Eindhoven",
+      "state_name": "NL",
+      "region": "NL",
+      "country_code": "Netherlands",
+      "percent_change": 0.47916666666666,
+      "coordinates": "51.4392648, 5.478633"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Okta Inc",
+      "city_name": "San Francisco",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 2.7289211242067,
+      "coordinates": "37.7790262, -122.419906"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Old Dominion Freight Line Inc",
+      "city_name": "Thomasville",
+      "state_name": "NC",
+      "region": "SE",
+      "country_code": "US",
+      "percent_change": 3.23157831527666,
+      "coordinates": "35.8831786, -80.081817"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "O\u2019Reilly Automotive Inc",
+      "city_name": "Springfield",
+      "state_name": "MO",
+      "region": "MW",
+      "country_code": "US",
+      "percent_change": 2.99418604651163,
+      "coordinates": "37.2166779, -93.2920373"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Paccar Inc",
+      "city_name": "Bellevue",
+      "state_name": "WA",
+      "region": "NW",
+      "country_code": "US",
+      "percent_change": 5.61050754013296,
+      "coordinates": "47.6144219, -122.192337"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Palo Alto Networks Inc",
+      "city_name": "Santa Clara",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 2.92679614287655,
+      "coordinates": "37.2333253, -121.6846349"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Paychex Inc",
+      "city_name": "Rochester",
+      "state_name": "NY",
+      "region": "SE",
+      "country_code": "US",
+      "percent_change": 2.62440843252545,
+      "coordinates": "43.157285, -77.615214"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Pinduoduo Inc",
+      "city_name": "Shanghai",
+      "state_name": "CN",
+      "region": "CH",
+      "country_code": "CH",
+      "percent_change": 2.14492753623189,
+      "coordinates": "31.2322758, 121.4692071"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "PayPal Holdings Inc",
+      "city_name": "San Jose",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 9.58018304814963,
+      "coordinates": "37.3361905, -121.890583"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "PepsiCo Inc.",
+      "city_name": "Harrison",
+      "state_name": "NY",
+      "region": "SE",
+      "country_code": "US",
+      "percent_change": 5.6098773616175,
+      "coordinates": "41.0195135, -73.71116375"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Qualcomm Inc",
+      "city_name": "San Diego",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 6.50463613374543,
+      "coordinates": "32.7174202, -117.1627728"
+   },
+   {
+      "date_val": "2020-04-30",
+      "company_name": "Texas Instruments Inc",
+      "city_name": "Dallas",
+      "state_name": "TX",
+      "region": "SE",
+      "country_code": "US",
+      "percent_change": 2.37586759209824,
+      "coordinates": "32.7762719, -96.7968559"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Regeneron Pharmaceuticals Inc",
+      "city_name": "Tarrytown",
+      "state_name": "NY",
+      "region": "SE",
+      "country_code": "US",
+      "percent_change": 4.61562661513225,
+      "coordinates": "41.065586, -73.86732932"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Ross Stores Inc",
+      "city_name": "San Bruno",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 2.92795147966119,
+      "coordinates": "37.6261715, -122.4332435"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Sirius XM Holdings Inc",
+      "city_name": "New York",
+      "state_name": "NY",
+      "region": "SE",
+      "country_code": "US",
+      "percent_change": 2.07612456747405,
+      "coordinates": "40.7127281, -74.0060152"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Seagen Inc",
+      "city_name": "Bothell",
+      "state_name": "WA",
+      "region": "NW",
+      "country_code": "US",
+      "percent_change": 1.69290169290169,
+      "coordinates": "47.7598697, -122.2068288"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Splunk Inc",
+      "city_name": "San Francisco",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 1.31937725393614,
+      "coordinates": "37.7790262, -122.419906"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Skyworks Solutions Inc",
+      "city_name": "Irvine",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 3.09398715703445,
+      "coordinates": "33.6856969, -117.8259819"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Starbucks Corp",
+      "city_name": "Seattle",
+      "state_name": "WA",
+      "region": "NW",
+      "country_code": "US",
+      "percent_change": 6.5041888804265,
+      "coordinates": "47.6038321, -122.3300624"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Synopsys Inc",
+      "city_name": "Mountain View",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 3.9788647826435,
+      "coordinates": "37.3893889, -122.0832101"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Tesla Inc",
+      "city_name": "Austin",
+      "state_name": "TX",
+      "region": "SE",
+      "country_code": "US",
+      "percent_change": 8.13109243697479,
+      "coordinates": "30.2711286, -97.7436995"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "T-Mobile US Inc",
+      "city_name": "Bellevue",
+      "state_name": "WA",
+      "region": "NW",
+      "country_code": "US",
+      "percent_change": 6.53774173424828,
+      "coordinates": "47.6144219, -122.192337"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Verisign Inc",
+      "city_name": "Reston",
+      "state_name": "VA",
+      "region": "SE",
+      "country_code": "US",
+      "percent_change": 4.99626286437072,
+      "coordinates": "38.9583737, -77.3579805"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Verisk Analytics Inc",
+      "city_name": "Jersey City",
+      "state_name": "NJ",
+      "region": "NE",
+      "country_code": "US",
+      "percent_change": 0.220249156858711,
+      "coordinates": "40.7215682, -74.047455"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Vertex Pharmaceuticals Inc",
+      "city_name": "Boston",
+      "state_name": "MA",
+      "region": "SE",
+      "country_code": "US",
+      "percent_change": 1.20515052925813,
+      "coordinates": "42.3602534, -71.0582912"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Walgreens Boots Alliance Inc",
+      "city_name": "Chicago",
+      "state_name": "IL",
+      "region": "MW",
+      "country_code": "US",
+      "percent_change": 8.12265917602996,
+      "coordinates": "41.8755616, -87.6244212"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Workday Inc",
+      "city_name": "Pleasanton",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 0.430123204782389,
+      "coordinates": "37.6624312, -121.8746789"
+   },
+   {
+      "date_val": "2020-04-28",
+      "company_name": "Xcel Energy Inc",
+      "city_name": "Minneapolis",
+      "state_name": "MN",
+      "region": "MW",
+      "country_code": "US",
+      "percent_change": 2.98151460942159,
+      "coordinates": "44.9772995, -93.2654692"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Zoom Video Communications Inc",
+      "city_name": "San Jose",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 4.89380530973451,
+      "coordinates": "37.3361905, -121.890583"
+   },
+   {
+      "date_val": "2020-03-12",
+      "company_name": "Zscaler Inc",
+      "city_name": "San Jose",
+      "state_name": "CA",
+      "region": "W",
+      "country_code": "US",
+      "percent_change": 0.166825548141087,
+      "coordinates": "37.3361905, -121.890583"
+   }
+]
