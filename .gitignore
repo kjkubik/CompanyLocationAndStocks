@@ -7,8 +7,12 @@ __pycache__
 coordinates/SECTORS_edit.csv
 source/compcom_edit.csv
 source/.DS_Store
+<<<<<<< HEAD
 1:03
 config2.py
+=======
+
+>>>>>>> 40c8d634262039daf1d18d11909a4ffc8f6c96cf
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
