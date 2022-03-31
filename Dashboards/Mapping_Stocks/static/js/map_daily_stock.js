@@ -46,9 +46,9 @@ let allMonthlyPercentChange = new L.LayerGroup();
 
 // overlays 
 let overlays = {
-    "Earthquakes": allDailyPercentChange,
-    "Tectonic Plates": allRegions,
-    "Major Earthquakes": allMajorEQ
+    "Daily Percent Change": allDailyPercentChange,
+    "Regions": allRegions,
+    "Monthly Percent Change": allMonthlyPercentChange
 };
 
 // N O T H I N G   C H A N G E S   B E L O W    H E R E ! ! ! ! ! 
@@ -93,32 +93,32 @@ legend.onAdd = function() {
 legend.addTo(map);
 
 //******************/
-// Tectonic Plates */
+// Comapany Regions */
 //******************/
 
 // T H I S   R E S O U R C E   I S   G O I N G   T O   H A V E   T O   B E   F O R   T H E   W E E K L Y   I N P U T ! ! ! ! 
 // (O R   I   L I K E D   M A N D O ' S   S U G G E S T I O N .   W E   M A Y   B E   A B L E   T O   S H O W   A L L   1 1   R E G I O N S )
-tectonicPlates = "https://raw.githubusercontent.com/kjkubik/Mapping_Earthquakes/main/PB2002_boundaries.json";
+companyRegions = "https://raw.githubusercontent.com/kjkubik/Mapping_Earthquakes/main/PB2002_boundaries.json";
 
-d3.json(tectonicPlates).then(function(data) {
+d3.json(companyRegions).then(function(data) {
     L.geoJSON(data, {
         color: "#264f45",
         weight: 2
-    }).addTo(allTectonicPlates);
+    }).addTo(allRegions);
 })
-allTectonicPlates.addTo(map);
+allRegions.addTo(map);
 
 //***************/
-// Earth Quakes */
+// Daily Percentage Change */
 //***************/
 
 // T H I S   R E S O U R C E   I S   G O I N G   T O   H A V E   T O   B E   F O R   T H E   D A I L Y   I N P U T ! ! !
-let earthquakes = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson"
+let dailyPercentChange = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson"
 
-// retrieve earthquake GeoJSON data
-d3.json(earthquakes).then(function(data) {
+// retrieve daily percent change GeoJSON data
+d3.json(dailyPercentChange).then(function(data) {
 
-    // style for earthquakes
+    // style for daily percent change
     function styleInfo(feature) {
 
         magnitude = parseInt(feature.properties.mag);
@@ -163,7 +163,7 @@ d3.json(earthquakes).then(function(data) {
         return magnitude * 4;
     }
 
-    // GeoJSON layer for earthquakes
+    // GeoJSON layer for daily percent change
     L.geoJson(data, {
         // circleMarker
         pointToLayer: function(feature, latlng) {
@@ -179,23 +179,23 @@ d3.json(earthquakes).then(function(data) {
             layer.bindPopup("Magnitude: " + feature.properties.mag + "<br>Location: " + feature.properties.place);
         }
 
-    }).addTo(allEarthquakes);
+    }).addTo(allDailyPercentChange);
 
     // Then we add the earthquake layer to our map.
-    allEarthquakes.addTo(map);
+    allDailyPercentChange.addTo(map);
 });
 
 //********************/
-// Major Earthquakes */
+// Monthly Percent Chnages */
 //********************/
 // W H E R E   M O N T H L Y   P E R C E N T   C H A N G E S   C O U L D   G O ! ! !
-majorEQ = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson";
-d3.json(majorEQ).then(function(data) {
+monthlyPercentChanges = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson";
+d3.json(monthlyPercentChanges).then(function(data) {
 
     // A L L   M A P S   W E   A R E   C R E A T I N G   W I L L   B E   D O I N G 
     // W H A T   I S   I N   E A R T H Q U A K E S   M A P   D O E S, N O T   T H I S. 
     // C O P Y   F R O M   E A R T H Q U A K E ! ! ! 
-    // style for earthquakes
+    // style for Monthly Percent CHnages
     function styleInfo(feature) {
 
         // W H E R E   D O E S   T H E S E   C O M E   F R O M ?   S P E C I F I C A L L Y 
@@ -261,8 +261,8 @@ d3.json(majorEQ).then(function(data) {
             layer.bindPopup("Magnitude: " + feature.properties.mag + "<br>Location: " + feature.properties.place);
         }
 
-    }).addTo(allMajorEQ);
+    }).addTo(allMonthlyPercentChange);
 
     // Then we add the earthquake layer to our map.
-    allMajorEQ.addTo(map);
+    allMonthlyPercentChange.addTo(map);
 });
