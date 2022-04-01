@@ -1,0 +1,34 @@
+---------------------------------------
+Opener - Nikita
+---------------------------------------
+- What is our topic of choice?
+- Why did we choose this?
+- What questions did we hope to answer?
+
+---------------------------------------
+Data collection/processing - Kim
+---------------------------------------
+- What data did we collect?
+- How did we collect it?
+- How did we store and pre-process it?
+
+---------------------------------------
+Machine Learning Model - Armando
+---------------------------------------
+- What models did we choose?
+- What were our features and targets?
+- What were our scores?
+
+---------------------------------------
+Results of machine learning - Sarah
+---------------------------------------
+- What were our results based on the models?
+- Interactive graphs to show stock trends, locations, etc
+- What does this all mean?
+
+---------------------------------------
+Conclusion - Alexis
+---------------------------------------
+- What did we decide at this time?
+- Were our questions answered?
+- What more could we consider that would affect our results? (ex. need more time, playing with the choice of features and targets, using different models) 
