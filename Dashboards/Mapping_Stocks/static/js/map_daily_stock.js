@@ -35,7 +35,7 @@ let baseMaps = {
     "Dark Map": dark
 };
 
-// N O T H I N G   C H A N G E S   A B O V E    H E R E ! ! ! ! ! 
+
 
 
 // layers
@@ -51,7 +51,7 @@ let overlays = {
     "Monthly Percent Change": allMonthlyPercentChange
 };
 
-// N O T H I N G   C H A N G E S   B E L O W    H E R E ! ! ! ! ! 
+
 // control for layers to be toggled on and off
 L.control.layers(baseMaps, overlays).addTo(map);
 
@@ -59,6 +59,7 @@ L.control.layers(baseMaps, overlays).addTo(map);
 let legend = L.control({
     position: "bottomright"
 });
+
 
 // creating HTML for legand on map:
 legend.onAdd = function() {
@@ -73,9 +74,7 @@ legend.onAdd = function() {
         "#800d21",
         "#520815"
     ];
-    // N O T H I N G   C H A N G E S   A B O V E    H E R E ! ! ! ! ! 
-
-
+    // N O T H I N G   C H A N G E S   A B O V E    H E R E ! ! ! ! !   
 
 
     // Looping through intervals to generate a label with a colored square for each interval.
@@ -88,17 +87,16 @@ legend.onAdd = function() {
     return div;
 };
 
-
 // add legend to the map
 legend.addTo(map);
 
 //******************/
-// Comapany Regions */
+// Company Regions */
 //******************/
 
 // T H I S   R E S O U R C E   I S   G O I N G   T O   H A V E   T O   B E   F O R   T H E   W E E K L Y   I N P U T ! ! ! ! 
 // (O R   I   L I K E D   M A N D O ' S   S U G G E S T I O N .   W E   M A Y   B E   A B L E   T O   S H O W   A L L   1 1   R E G I O N S )
-companyRegions = "https://raw.githubusercontent.com/kjkubik/Mapping_Earthquakes/main/PB2002_boundaries.json";
+companyRegions = "resources\company_all_star_init.json";
 
 d3.json(companyRegions).then(function(data) {
     L.geoJSON(data, {
@@ -108,12 +106,12 @@ d3.json(companyRegions).then(function(data) {
 })
 allRegions.addTo(map);
 
-//***************/
+//**************************/
 // Daily Percentage Change */
-//***************/
+//**************************/
 
 // T H I S   R E S O U R C E   I S   G O I N G   T O   H A V E   T O   B E   F O R   T H E   D A I L Y   I N P U T ! ! !
-let dailyPercentChange = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson"
+let dailyPercentChange = "resources\company_all_star_init.json"
 
 // retrieve daily percent change GeoJSON data
 d3.json(dailyPercentChange).then(function(data) {
@@ -189,7 +187,7 @@ d3.json(dailyPercentChange).then(function(data) {
 // Monthly Percent Chnages */
 //********************/
 // W H E R E   M O N T H L Y   P E R C E N T   C H A N G E S   C O U L D   G O ! ! !
-monthlyPercentChanges = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson";
+monthlyPercentChanges = "resources\monthly_stocks.json";
 d3.json(monthlyPercentChanges).then(function(data) {
 
     // A L L   M A P S   W E   A R E   C R E A T I N G   W I L L   B E   D O I N G 
