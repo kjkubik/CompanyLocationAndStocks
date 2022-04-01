@@ -65,7 +65,7 @@ let legend = L.control({
 legend.onAdd = function() {
     let div = L.DomUtil.create("div", "info legend");
 
-    const magnitudes = [0, 1, 2, 3, 4, 5];
+    const percent_change = [0, 1, 2, 3, 4, 5];
     const colors = [
         "#d48914",
         "#b14a09",
@@ -78,11 +78,11 @@ legend.onAdd = function() {
 
 
     // Looping through intervals to generate a label with a colored square for each interval.
-    for (var i = 0; i < magnitudes.length; i++) {
+    for (var i = 0; i < percent_change.length; i++) {
         console.log(colors[i]);
         div.innerHTML +=
             "<i style='background: " + colors[i] + "'></i> " +
-            magnitudes[i] + (magnitudes[i + 1] ? "&ndash;" + magnitudes[i + 1] + "<br>" : "+");
+            percent_change[i] + (percent_change[i + 1] ? "&ndash;" + percent_change[i + 1] + "<br>" : "+");
     }
     return div;
 };
@@ -96,7 +96,7 @@ legend.addTo(map);
 
 // T H I S   R E S O U R C E   I S   G O I N G   T O   H A V E   T O   B E   F O R   T H E   W E E K L Y   I N P U T ! ! ! ! 
 // (O R   I   L I K E D   M A N D O ' S   S U G G E S T I O N .   W E   M A Y   B E   A B L E   T O   S H O W   A L L   1 1   R E G I O N S )
-companyRegions = "resources\company_all_star_init.json";
+companyRegions = "resources\geo_json_new.geojson";
 
 d3.json(companyRegions).then(function(data) {
     L.geoJSON(data, {
@@ -111,7 +111,7 @@ allRegions.addTo(map);
 //**************************/
 
 // T H I S   R E S O U R C E   I S   G O I N G   T O   H A V E   T O   B E   F O R   T H E   D A I L Y   I N P U T ! ! !
-let dailyPercentChange = "resources\company_all_star_init.json"
+let dailyPercentChange = "resources\geo_json_new.geojson"
 
 // retrieve daily percent change GeoJSON data
 d3.json(dailyPercentChange).then(function(data) {
@@ -164,9 +164,9 @@ d3.json(dailyPercentChange).then(function(data) {
     // GeoJSON layer for daily percent change
     L.geoJson(data, {
         // circleMarker
-        pointToLayer: function(feature, latlng) {
+        pointToLayer: function(feature, coordinates) {
             console.log(data);
-            return L.circleMarker(latlng);
+            return L.circleMarker(coordinates);
         },
 
         // style for each circleMarker
@@ -174,7 +174,9 @@ d3.json(dailyPercentChange).then(function(data) {
 
         // create a popups for circleMarkers, display magnitude and locationfor each earthquake
         onEachFeature: function(feature, layer) {
-            layer.bindPopup("Magnitude: " + feature.properties.mag + "<br>Location: " + feature.properties.place);
+            layer.bindPopup("Company Name: " + feature.properties.company_name + "<br>Region: " + feature.properties.region +
+                "<br>Location: " + feature.properties.city_name + ", " + feature.properties.state_name +
+                "<br>Percent Change: " + mag);
         }
 
     }).addTo(allDailyPercentChange);
@@ -187,7 +189,7 @@ d3.json(dailyPercentChange).then(function(data) {
 // Monthly Percent Chnages */
 //********************/
 // W H E R E   M O N T H L Y   P E R C E N T   C H A N G E S   C O U L D   G O ! ! !
-monthlyPercentChanges = "resources\monthly_stocks.json";
+monthlyPercentChanges = "resources\monthly_json_new.geojson";
 d3.json(monthlyPercentChanges).then(function(data) {
 
     // A L L   M A P S   W E   A R E   C R E A T I N G   W I L L   B E   D O I N G 
@@ -244,9 +246,9 @@ d3.json(monthlyPercentChanges).then(function(data) {
     // GeoJSON layer for earthquakes
     L.geoJson(data, {
         // circleMarker
-        pointToLayer: function(feature, latlng) {
+        pointToLayer: function(feature, coordinates) {
             console.log(data);
-            return L.circleMarker(latlng);
+            return L.circleMarker(coordinates);
         },
 
         // style for each circleMarker
