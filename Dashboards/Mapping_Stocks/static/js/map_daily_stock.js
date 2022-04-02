@@ -185,11 +185,10 @@ d3.json(dailyPercentChange).then(function(data) {
     allDailyPercentChange.addTo(map);
 });
 
-//********************/
+//**************************/
 // Monthly Percent Chnages */
-//********************/
-// W H E R E   M O N T H L Y   P E R C E N T   C H A N G E S   C O U L D   G O ! ! !
-monthlyPercentChanges = "resources\monthly_json_new.geojson";
+//**************************/
+monthlyPercentChanges = "C:\Users\kkubi\Class Repo\CompanyLocationAndStocks\resources\monthly_json_new.geojson";
 d3.json(monthlyPercentChanges).then(function(data) {
 
     // A L L   M A P S   W E   A R E   C R E A T I N G   W I L L   B E   D O I N G 
