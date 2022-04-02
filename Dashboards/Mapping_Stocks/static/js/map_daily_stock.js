@@ -84,44 +84,12 @@ legend.onAdd = function() {
 legend.addTo(map);
 
 //**********/
-// Regions */
+// Region Midwest */
 //**********/
 
-CompanyRegions = "https://raw.githubusercontent.com/kjkubik/ProjectJSONStockInfo/main/gz_2010_us_040_00_500k.json";
+let CompanyRegions = "https://raw.githubusercontent.com/scdoshi/us-geojson/master/geojson/region/Midwest.geojson";
 
-// d3.json(CompanyRegions).then(function(data) {
-//     L.geoJSON(data, {
-//         color: "#264f45",
-//         weight: 2
-//     }).addTo(allRegions);
-// })
-// allRegions.addTo(map);
 
-//========================
-//let torontoHoods = "https://raw.githubusercontent.com/kjkubik/Mapping_Earthquakes/main/torontoNeighborhoods.json";
-// if (feature.properties = "Midwest") {
-//     colorMidwest = "red";
-// }
-// color, dependant on magnitude of earthquake
-function getRegionColor(name_region) {
-
-    // console.log(magnitude);
-
-    switch (name_region) {
-        case name_region = 'Southeast':
-            return "red";
-        case name_region = 'Northwest':
-            return "blue";
-        case name_region = 'Northeast':
-            return "orange";
-        case name_region = 'Southeast':
-            return "purple";
-        case name_region = 'Midwest':
-            return "yellow";
-        default:
-            return "black";
-    }
-}
 d3.json(CompanyRegions).then(function(data) {
     console.log("THIS IS MY FLIPPING DATA: ");
     // name_region = features.properties.NAME;
@@ -130,7 +98,7 @@ d3.json(CompanyRegions).then(function(data) {
     // console.log(data);
     //Creating a GeoJSON layer with the retrieved data.
     L.geoJSON(data, {
-        color: getRegionColor(name_region),
+        color: "red",
         lineWeight: 1,
         onEachFeature: function(feature, layer) {
             console.log(layer)
@@ -141,6 +109,77 @@ d3.json(CompanyRegions).then(function(data) {
 //=====================================================
 
 
+//**********/
+// Region Southeast */
+//**********/
+
+let CompanyRegions2 = "https://raw.githubusercontent.com/scdoshi/us-geojson/master/geojson/region/South.geojson";
+
+
+d3.json(CompanyRegions2).then(function(data) {
+    console.log("THIS IS MY FLIPPING DATA: ");
+    // name_region = features.properties.NAME;
+    // console.log(name_region);
+
+    // console.log(data);
+    //Creating a GeoJSON layer with the retrieved data.
+    L.geoJSON(data, {
+        color: "blue",
+        lineWeight: 1,
+        onEachFeature: function(feature, layer) {
+            console.log(layer)
+                // layer.bindPopup("<h2>" + "Neighborhood: " + feature.properties.AREA_NAME + "</2>");
+        }
+    }).addTo(map)
+});
+
+//**********/
+// Region West */
+//**********/
+
+let CompanyRegions3 = "https://raw.githubusercontent.com/scdoshi/us-geojson/master/geojson/region/West.geojson";
+
+
+d3.json(CompanyRegions3).then(function(data) {
+    console.log("THIS IS MY FLIPPING DATA: ");
+    // name_region = features.properties.NAME;
+    // console.log(name_region);
+
+    // console.log(data);
+    //Creating a GeoJSON layer with the retrieved data.
+    L.geoJSON(data, {
+        color: "black",
+        lineWeight: 1,
+        onEachFeature: function(feature, layer) {
+            console.log(layer)
+                // layer.bindPopup("<h2>" + "Neighborhood: " + feature.properties.AREA_NAME + "</2>");
+        }
+    }).addTo(map)
+});
+
+//**********/
+// Region East  */
+//**********/
+
+let CompanyRegions4 = "https://raw.githubusercontent.com/scdoshi/us-geojson/master/geojson/region/Northeast.geojson";
+
+
+d3.json(CompanyRegions4).then(function(data) {
+    console.log("THIS IS MY FLIPPING DATA: ");
+    // name_region = features.properties.NAME;
+    // console.log(name_region);
+
+    // console.log(data);
+    //Creating a GeoJSON layer with the retrieved data.
+    L.geoJSON(data, {
+        color: "yellow",
+        lineWeight: 1,
+        onEachFeature: function(feature, layer) {
+            console.log(layer)
+                // layer.bindPopup("<h2>" + "Neighborhood: " + feature.properties.AREA_NAME + "</2>");
+        }
+    }).addTo(map)
+});
 
 
 
