@@ -35,9 +35,6 @@ let baseMaps = {
     "Dark Map": dark
 };
 
-
-
-
 // layers
 let allDailyPercentChange = new L.LayerGroup();
 let allRegions = new L.LayerGroup();
@@ -46,11 +43,10 @@ let allMonthlyPercentChange = new L.LayerGroup();
 
 // overlays 
 let overlays = {
-    "Daily Percent Change": allDailyPercentChange,
-    "Regions": allRegions,
-    "Monthly Percent Change": allMonthlyPercentChange
+    "Daily Percentage Changes": allDailyPercentChange,
+    "Company Regions": allRegions,
+    "Monthly Percent Changes": allMonthlyPercentChange
 };
-
 
 // control for layers to be toggled on and off
 L.control.layers(baseMaps, overlays).addTo(map);
@@ -60,12 +56,11 @@ let legend = L.control({
     position: "bottomright"
 });
 
-
 // creating HTML for legand on map:
 legend.onAdd = function() {
     let div = L.DomUtil.create("div", "info legend");
 
-    const percent_change = [0, 1, 2, 3, 4, 5];
+    const magnitudes = [0, 1, 2, 3, 4, 5];
     const colors = [
         "#d48914",
         "#b14a09",
@@ -74,15 +69,13 @@ legend.onAdd = function() {
         "#800d21",
         "#520815"
     ];
-    // N O T H I N G   C H A N G E S   A B O V E    H E R E ! ! ! ! !   
-
 
     // Looping through intervals to generate a label with a colored square for each interval.
-    for (var i = 0; i < percent_change.length; i++) {
+    for (var i = 0; i < magnitudes.length; i++) {
         console.log(colors[i]);
         div.innerHTML +=
             "<i style='background: " + colors[i] + "'></i> " +
-            percent_change[i] + (percent_change[i + 1] ? "&ndash;" + percent_change[i + 1] + "<br>" : "+");
+            magnitudes[i] + (magnitudes[i + 1] ? "&ndash;" + magnitudes[i + 1] + "<br>" : "+");
     }
     return div;
 };
@@ -90,15 +83,13 @@ legend.onAdd = function() {
 // add legend to the map
 legend.addTo(map);
 
-//******************/
-// Company Regions */
-//******************/
+//**********/
+// Regions */
+//**********/
 
-// T H I S   R E S O U R C E   I S   G O I N G   T O   H A V E   T O   B E   F O R   T H E   W E E K L Y   I N P U T ! ! ! ! 
-// (O R   I   L I K E D   M A N D O ' S   S U G G E S T I O N .   W E   M A Y   B E   A B L E   T O   S H O W   A L L   1 1   R E G I O N S )
-companyRegions = "resources\geo_json_new.geojson";
+CompanyRegions = "https://raw.githubusercontent.com/kjkubik/Mapping_Earthquakes/main/PB2002_boundaries.json";
 
-d3.json(companyRegions).then(function(data) {
+d3.json(CompanyRegions).then(function(data) {
     L.geoJSON(data, {
         color: "#264f45",
         weight: 2
@@ -106,17 +97,16 @@ d3.json(companyRegions).then(function(data) {
 })
 allRegions.addTo(map);
 
-//**************************/
-// Daily Percentage Change */
-//**************************/
+//******************************/
+// Daily Stock Percent Changes */
+//******************************/
 
-// T H I S   R E S O U R C E   I S   G O I N G   T O   H A V E   T O   B E   F O R   T H E   D A I L Y   I N P U T ! ! !
-let dailyPercentChange = "resources\geo_json_new.geojson"
+let DailyPercentageChanges = "https://raw.githubusercontent.com/kjkubik/ProjectJSONStockInfo/main/daily_stock_map3.json"
 
-// retrieve daily percent change GeoJSON data
-d3.json(dailyPercentChange).then(function(data) {
+// retrieve earthquake GeoJSON data
+d3.json(DailyPercentageChanges).then(function(data) {
 
-    // style for daily percent change
+    // style for daily percent changes
     function styleInfo(feature) {
 
         magnitude = parseInt(feature.properties.mag);
@@ -124,7 +114,7 @@ d3.json(dailyPercentChange).then(function(data) {
         return {
             opacity: 1,
             fillOpacity: 1,
-            fillColor: getColor(),
+            fillColor: getColor(magnitude),
             color: "#000000",
             radius: getRadius(magnitude, 'earthquake'),
             stroke: true,
@@ -161,12 +151,12 @@ d3.json(dailyPercentChange).then(function(data) {
         return magnitude * 4;
     }
 
-    // GeoJSON layer for daily percent change
+    // GeoJSON layer for daily percent changes
     L.geoJson(data, {
         // circleMarker
-        pointToLayer: function(feature, coordinates) {
+        pointToLayer: function(feature, latlng) {
             console.log(data);
-            return L.circleMarker(coordinates);
+            return L.circleMarker(latlng);
         },
 
         // style for each circleMarker
@@ -174,9 +164,8 @@ d3.json(dailyPercentChange).then(function(data) {
 
         // create a popups for circleMarkers, display magnitude and locationfor each earthquake
         onEachFeature: function(feature, layer) {
-            layer.bindPopup("Company Name: " + feature.properties.company_name + "<br>Region: " + feature.properties.region +
-                "<br>Location: " + feature.properties.city_name + ", " + feature.properties.state_name +
-                "<br>Percent Change: " + mag);
+            layer.bindPopup("Company: " + feature.properties.company_name + "<br>Sector: " + feature.properties.sector + "<br>Region: " + feature.properties.region + "<br>Location: " +
+                feature.properties.place + ", " + feature.properties.state_name + "<br>Stock Percent Change: " + Math.round(feature.properties.mag * 100) / 100);
         }
 
     }).addTo(allDailyPercentChange);
@@ -186,22 +175,16 @@ d3.json(dailyPercentChange).then(function(data) {
 });
 
 //**************************/
-// Monthly Percent Chnages */
+// Monthly Percent Changes */
 //**************************/
-monthlyPercentChanges = "C:\Users\kkubi\Class Repo\CompanyLocationAndStocks\resources\monthly_json_new.geojson";
-d3.json(monthlyPercentChanges).then(function(data) {
 
-    // A L L   M A P S   W E   A R E   C R E A T I N G   W I L L   B E   D O I N G 
-    // W H A T   I S   I N   E A R T H Q U A K E S   M A P   D O E S, N O T   T H I S. 
-    // C O P Y   F R O M   E A R T H Q U A K E ! ! ! 
-    // style for Monthly Percent CHnages
+MonthlyPercentChanges = "https://raw.githubusercontent.com/kjkubik/ProjectJSONStockInfo/main/monthly_json_new3.json";
+//const majorEQ = "resources\monthly_json_new.geojson"
+
+d3.json(MonthlyPercentChanges).then(function(data) {
+
+    // style for monthly percent changes
     function styleInfo(feature) {
-
-        // W H E R E   D O E S   T H E S E   C O M E   F R O M ?   S P E C I F I C A L L Y 
-        // D O E S   I T   C O M E   F R O M   T H E   J S O N ?   P L E A S E   V E R I F Y ! ! ! 
-        // feature.properties.mag
-        // magnitude
-        //'earthquake'
 
         magnitude = parseInt(feature.properties.mag);
 
@@ -215,7 +198,6 @@ d3.json(monthlyPercentChanges).then(function(data) {
             weight: 0.5
         };
     }
-
 
     // color, dependant on magnitude of earthquake
     function getColor(magnitude) {
@@ -242,22 +224,22 @@ d3.json(monthlyPercentChanges).then(function(data) {
         return magnitude * 4;
     }
 
-    // GeoJSON layer for earthquakes
+    // GeoJSON layer for monthly percent changes
     L.geoJson(data, {
         // circleMarker
-        pointToLayer: function(feature, coordinates) {
+        pointToLayer: function(feature, latlng) {
             console.log(data);
-            return L.circleMarker(coordinates);
+            return L.circleMarker(latlng);
         },
 
         // style for each circleMarker
         style: styleInfo,
 
-        // C H A N G E   P O P U P S   T O   C O M P A N Y   N A M E ,   C I T Y ,   
-        // S T A T E ,   R E G I O N ,   A N D   P E R C E N T   C H A N G E ! ! !
         // create a popups for circleMarkers, display magnitude and locationfor each earthquake
         onEachFeature: function(feature, layer) {
-            layer.bindPopup("Magnitude: " + feature.properties.mag + "<br>Location: " + feature.properties.place);
+
+            layer.bindPopup("Company: " + feature.properties.company_name + "<br>Sector: " + feature.properties.sector + "<br>Region: " + feature.properties.region + "<br>Location: " +
+                feature.properties.place + ", " + feature.properties.state_name + "<br>Stock Percent Change: " + Math.round(feature.properties.mag * 100) / 100);
         }
 
     }).addTo(allMonthlyPercentChange);
