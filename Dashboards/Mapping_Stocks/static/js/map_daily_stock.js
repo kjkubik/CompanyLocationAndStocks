@@ -89,54 +89,41 @@ legend.addTo(map);
 
 CompanyRegions = "https://raw.githubusercontent.com/kjkubik/ProjectJSONStockInfo/main/gz_2010_us_040_00_500k.json";
 
-// d3.json(CompanyRegions).then(function(data) {
-//     L.geoJSON(data, {
-//         color: "#264f45",
-//         weight: 2
-//     }).addTo(allRegions);
-// })
-// allRegions.addTo(map);
-
-//========================
-//let torontoHoods = "https://raw.githubusercontent.com/kjkubik/Mapping_Earthquakes/main/torontoNeighborhoods.json";
-// if (feature.properties = "Midwest") {
-//     colorMidwest = "red";
-// }
-// color, dependant on magnitude of earthquake
+// color, dependant on region state is located in
 function getRegionColor(name_region) {
 
-    // console.log(magnitude);
+    console.log("name_region: " + name_region);
 
     switch (name_region) {
         case name_region = 'Southeast':
-            return "red";
+            return "#d73027";
         case name_region = 'Northwest':
-            return "blue";
+            return "#fc8d59";
         case name_region = 'Northeast':
-            return "orange";
+            return "#1b7837";
         case name_region = 'Southeast':
-            return "purple";
+            return "#91bfdb";
         case name_region = 'Midwest':
-            return "yellow";
+            return "#4575b4";
         default:
-            return "black";
+            return "#e0f3f8";
     }
 }
 d3.json(CompanyRegions).then(function(data) {
-    console.log("THIS IS MY FLIPPING DATA: ");
-    // name_region = features.properties.NAME;
-    // console.log(name_region);
 
-    // console.log(data);
-    //Creating a GeoJSON layer with the retrieved data.
-    L.geoJSON(data, {
-        color: getRegionColor(name_region),
-        lineWeight: 1,
-        onEachFeature: function(feature, layer) {
-            console.log(layer)
-                // layer.bindPopup("<h2>" + "Neighborhood: " + feature.properties.AREA_NAME + "</2>");
-        }
-    }).addTo(map)
+    function style(feature) {
+        return {
+            fillColor: getRegionColor(feature.properties.NAME),
+            weight: 2,
+            opacity: 1,
+            color: 'white',
+            dashArray: '3',
+            fillOpacity: 0.5
+        };
+    }
+    
+    L.geoJson(data, {style: style}).addTo(map);
+
 });
 //=====================================================
 
