@@ -96,17 +96,17 @@ function getRegionColor(name_region) {
 
     switch (name_region) {
         case name_region = 'Southeast':
-            return "red";
+            return "#d73027";
         case name_region = 'Northwest':
-            return "blue";
+            return "#fc8d59";
         case name_region = 'Northeast':
-            return "orange";
+            return "#1b7837";
         case name_region = 'Southeast':
-            return "purple";
+            return "#91bfdb";
         case name_region = 'Midwest':
-            return "yellow";
+            return "#4575b4";
         default:
-            return "black";
+            return "#e0f3f8";
     }
 }
 d3.json(CompanyRegions).then(function(data) {
@@ -118,7 +118,7 @@ d3.json(CompanyRegions).then(function(data) {
             opacity: 1,
             color: 'white',
             dashArray: '3',
-            fillOpacity: 0.7
+            fillOpacity: 0.5
         };
     }
     
