@@ -137,7 +137,7 @@ d3.json(CompanyRegions2).then(function(data) {
 // Region West */
 //**********/
 
-let CompanyRegions3 = "https://raw.githubusercontent.com/scdoshi/us-geojson/master/geojson/region/West.geojson";
+let CompanyRegions3 = "https://raw.githubusercontent.com/kjkubik/ProjectJSONStockInfo/main/west.geojson";
 
 
 d3.json(CompanyRegions3).then(function(data) {
@@ -181,6 +181,29 @@ d3.json(CompanyRegions4).then(function(data) {
     }).addTo(map)
 });
 
+//**********/
+// Region Northwest  */
+//**********/
+
+let CompanyRegions5 = "https://raw.githubusercontent.com/kjkubik/ProjectJSONStockInfo/main/northwest.geojson";
+
+
+d3.json(CompanyRegions5).then(function(data) {
+    console.log("THIS IS MY FLIPPING DATA: ");
+    // name_region = features.properties.NAME;
+    // console.log(name_region);
+
+    // console.log(data);
+    //Creating a GeoJSON layer with the retrieved data.
+    L.geoJSON(data, {
+        color: "green",
+        lineWeight: 1,
+        onEachFeature: function(feature, layer) {
+            console.log(layer)
+                // layer.bindPopup("<h2>" + "Neighborhood: " + feature.properties.AREA_NAME + "</2>");
+        }
+    }).addTo(map)
+});
 
 
 //******************************/
