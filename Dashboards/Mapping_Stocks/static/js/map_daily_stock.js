@@ -88,6 +88,7 @@ legend.addTo(map);
 //**********/
 
 CompanyRegions = "https://raw.githubusercontent.com/kjkubik/ProjectJSONStockInfo/main/gz_2010_us_040_00_500k.json";
+//CompanyRegions = "https://raw.githubusercontent.com/kjkubik/ProjectJSONStockInfo/main/states.json";
 
 // d3.json(CompanyRegions).then(function(data) {
 //     L.geoJSON(data, {
@@ -105,7 +106,7 @@ CompanyRegions = "https://raw.githubusercontent.com/kjkubik/ProjectJSONStockInfo
 // color, dependant on magnitude of earthquake
 function getRegionColor(name_region) {
 
-    // console.log(magnitude);
+    console.log("name_region: " + name_region);
 
     switch (name_region) {
         case name_region = 'Southeast':
@@ -123,20 +124,62 @@ function getRegionColor(name_region) {
     }
 }
 d3.json(CompanyRegions).then(function(data) {
-    console.log("THIS IS MY FLIPPING DATA: ");
-    // name_region = features.properties.NAME;
-    // console.log(name_region);
 
-    // console.log(data);
+    region_name = data.features[0]["properties"]["NAME"];
+    region_name_2 = data.features[1]["properties"]["NAME"];
+
+    cheese_whiz = data.features[0];
+
+    bacon = data.features;
+
+    Object.entries(bacon).forEach(([key, value]) =>
+    {          
+        console.log("key: " + key.toString() + ': ' + "value: " + value);
+        //console.log("key: " + key);
+        //console.log("value[0]: " + value[0]);
+    });
+
+
+    //myColor = data.features[0]["properties"]["region_color"];
+
+
+    console.log("THIS IS MY FLIPPING DATA: ");
+
+    /*
+
+    //name_region = toString(data);
+ //   console.log("myColor is: " + myColor);
+
+    // console.log(data);   
     //Creating a GeoJSON layer with the retrieved data.
     L.geoJSON(data, {
-        color: getRegionColor(name_region),
-        lineWeight: 1,
+        //color: getRegionColor(name_region),
+        //color: getRegionColor(data.NAME),
+        //color: getRegionColor("Southeast"),  //default value for testing
+        color: getRegionColor(region_name),  //default value for testing
+ //       color: myColor,  //default value for testing
         onEachFeature: function(feature, layer) {
             console.log(layer)
                 // layer.bindPopup("<h2>" + "Neighborhood: " + feature.properties.AREA_NAME + "</2>");
         }
-    }).addTo(map)
+    }). addTo(map)
+
+    */
+
+    function style(feature) {
+        return {
+            //fillColor: getRegionColor(region_name),
+            fillColor: getRegionColor(feature.properties.NAME),
+            weight: 2,
+            opacity: 1,
+            color: 'white',
+            dashArray: '3',
+            fillOpacity: 0.7
+        };
+    }
+    
+    L.geoJson(data, {style: style}).addTo(map);
+
 });
 //=====================================================
 
