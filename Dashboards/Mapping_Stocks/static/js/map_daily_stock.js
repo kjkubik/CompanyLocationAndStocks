@@ -16,7 +16,7 @@ let satelliteStreets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/sate
 });
 
 let dark = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/dark-v10/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-    attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
+    attribution: 'Map data Â© <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
     accessToken: API_KEY
 });
@@ -84,166 +84,9 @@ legend.onAdd = function() {
 legend.addTo(map);
 
 //**********/
-// Region Midwest */
+// Regions */
 //**********/
 
-<<<<<<< HEAD:Dashboards/Mapping_Stocks/static/js/map_daily_stock_mando.js
-let CompanyRegions = "https://raw.githubusercontent.com/scdoshi/us-geojson/master/geojson/region/Midwest.geojson";
-
-
-d3.json(CompanyRegions).then(function(data) {
-    console.log("THIS IS MY FLIPPING DATA: ");
-    // name_region = features.properties.NAME;
-    // console.log(name_region);
-
-    // console.log(data);
-    //Creating a GeoJSON layer with the retrieved data.
-    L.geoJSON(data, {
-        color: "red",
-        lineWeight: 1,
-        onEachFeature: function(feature, layer) {
-            console.log(layer)
-                // layer.bindPopup("<h2>" + "Neighborhood: " + feature.properties.AREA_NAME + "</2>");
-        }
-    }).addTo(map)
-=======
-CompanyRegions = "https://raw.githubusercontent.com/kjkubik/ProjectJSONStockInfo/main/gz_2010_us_040_00_500k.json";
-
-// color, dependant on region state is located in
-function getRegionColor(name_region) {
-
-    console.log("name_region: " + name_region);
-
-    switch (name_region) {
-        case name_region = 'Southeast':
-            return "#d73027";
-        case name_region = 'Northwest':
-            return "#fc8d59";
-        case name_region = 'Northeast':
-            return "#1b7837";
-        case name_region = 'Southeast':
-            return "#91bfdb";
-        case name_region = 'Midwest':
-            return "#4575b4";
-        default:
-            return "#e0f3f8";
-    }
-}
-d3.json(CompanyRegions).then(function(data) {
-
-    function style(feature) {
-        return {
-            fillColor: getRegionColor(feature.properties.NAME),
-            weight: 2,
-            opacity: 1,
-            color: 'white',
-            dashArray: '3',
-            fillOpacity: 0.5
-        };
-    }
-    
-    L.geoJson(data, {style: style}).addTo(map);
-
->>>>>>> origin:Dashboards/Mapping_Stocks/static/js/map_daily_stock.js
-});
-//=====================================================
-
-
-//**********/
-// Region Southeast */
-//**********/
-
-let CompanyRegions2 = "https://raw.githubusercontent.com/scdoshi/us-geojson/master/geojson/region/South.geojson";
-
-
-d3.json(CompanyRegions2).then(function(data) {
-    console.log("THIS IS MY FLIPPING DATA: ");
-    // name_region = features.properties.NAME;
-    // console.log(name_region);
-
-    // console.log(data);
-    //Creating a GeoJSON layer with the retrieved data.
-    L.geoJSON(data, {
-        color: "blue",
-        lineWeight: 1,
-        onEachFeature: function(feature, layer) {
-            console.log(layer)
-                // layer.bindPopup("<h2>" + "Neighborhood: " + feature.properties.AREA_NAME + "</2>");
-        }
-    }).addTo(map)
-});
-
-//**********/
-// Region West */
-//**********/
-
-let CompanyRegions3 = "https://raw.githubusercontent.com/kjkubik/ProjectJSONStockInfo/main/west.geojson";
-
-
-d3.json(CompanyRegions3).then(function(data) {
-    console.log("THIS IS MY FLIPPING DATA: ");
-    // name_region = features.properties.NAME;
-    // console.log(name_region);
-
-    // console.log(data);
-    //Creating a GeoJSON layer with the retrieved data.
-    L.geoJSON(data, {
-        color: "black",
-        lineWeight: 1,
-        onEachFeature: function(feature, layer) {
-            console.log(layer)
-                // layer.bindPopup("<h2>" + "Neighborhood: " + feature.properties.AREA_NAME + "</2>");
-        }
-    }).addTo(map)
-});
-
-//**********/
-// Region East  */
-//**********/
-
-let CompanyRegions4 = "https://raw.githubusercontent.com/scdoshi/us-geojson/master/geojson/region/Northeast.geojson";
-
-
-d3.json(CompanyRegions4).then(function(data) {
-    console.log("THIS IS MY FLIPPING DATA: ");
-    // name_region = features.properties.NAME;
-    // console.log(name_region);
-
-    // console.log(data);
-    //Creating a GeoJSON layer with the retrieved data.
-    L.geoJSON(data, {
-        color: "yellow",
-        lineWeight: 1,
-        onEachFeature: function(feature, layer) {
-            console.log(layer)
-                // layer.bindPopup("<h2>" + "Neighborhood: " + feature.properties.AREA_NAME + "</2>");
-        }
-    }).addTo(map)
-});
-
-//**********/
-// Region Northwest  */
-//**********/
-
-let CompanyRegions5 = "https://raw.githubusercontent.com/kjkubik/ProjectJSONStockInfo/main/northwest.geojson";
-
-
-d3.json(CompanyRegions5).then(function(data) {
-    console.log("THIS IS MY FLIPPING DATA: ");
-    // name_region = features.properties.NAME;
-    // console.log(name_region);
-
-    // console.log(data);
-    //Creating a GeoJSON layer with the retrieved data.
-    L.geoJSON(data, {
-        color: "green",
-        lineWeight: 1,
-        onEachFeature: function(feature, layer) {
-            console.log(layer)
-                // layer.bindPopup("<h2>" + "Neighborhood: " + feature.properties.AREA_NAME + "</2>");
-        }
-    }).addTo(map)
-});
 
 
 //******************************/
@@ -252,7 +95,7 @@ d3.json(CompanyRegions5).then(function(data) {
 
 let DailyPercentageChanges = "https://raw.githubusercontent.com/kjkubik/ProjectJSONStockInfo/main/daily_stock_map3.json"
 
-// retrieve earthquake GeoJSON data
+// retrieve Daily Percent Changes data
 d3.json(DailyPercentageChanges).then(function(data) {
 
     // style for daily percent changes
@@ -271,7 +114,7 @@ d3.json(DailyPercentageChanges).then(function(data) {
         };
     }
 
-    // color, dependant on magnitude of earthquake
+    // color, dependant on value of daily percent change
     function getColor(magnitude) {
 
         console.log(magnitude);
@@ -292,7 +135,7 @@ d3.json(DailyPercentageChanges).then(function(data) {
         }
     }
 
-    // radius, dependant on magnitude of earthquake 
+    // radius, dependant on value of daily percent change 
     function getRadius(magnitude) {
         if (magnitude === 0) {
             return 1;
@@ -319,7 +162,7 @@ d3.json(DailyPercentageChanges).then(function(data) {
 
     }).addTo(allDailyPercentChange);
 
-    // Then we add the earthquake layer to our map.
+    // Then we add the allDailyPercentChange layer to our map.
     allDailyPercentChange.addTo(map);
 });
 
@@ -328,7 +171,6 @@ d3.json(DailyPercentageChanges).then(function(data) {
 //**************************/
 
 MonthlyPercentChanges = "https://raw.githubusercontent.com/kjkubik/ProjectJSONStockInfo/main/monthly_json_new3.json";
-//const majorEQ = "resources\monthly_json_new.geojson"
 
 d3.json(MonthlyPercentChanges).then(function(data) {
 
@@ -348,7 +190,7 @@ d3.json(MonthlyPercentChanges).then(function(data) {
         };
     }
 
-    // color, dependant on magnitude of earthquake
+    // color, dependant on value of monthly percent changes
     function getColor(magnitude) {
 
         console.log(magnitude);
@@ -365,7 +207,7 @@ d3.json(MonthlyPercentChanges).then(function(data) {
         }
     }
 
-    // radius, dependant on magnitude of earthquake 
+    // radius, dependant on value of monthly percent changes 
     function getRadius(magnitude) {
         if (magnitude === 0) {
             return 1;
@@ -384,7 +226,7 @@ d3.json(MonthlyPercentChanges).then(function(data) {
         // style for each circleMarker
         style: styleInfo,
 
-        // create a popups for circleMarkers, display magnitude and locationfor each earthquake
+        // create popups for circleMarkers, display company information and geolocation info for each marker
         onEachFeature: function(feature, layer) {
 
             layer.bindPopup("Company: " + feature.properties.company_name + "<br>Sector: " + feature.properties.sector + "<br>Region: " + feature.properties.region + "<br>Location: " +
@@ -393,6 +235,51 @@ d3.json(MonthlyPercentChanges).then(function(data) {
 
     }).addTo(allMonthlyPercentChange);
 
-    // Then we add the earthquake layer to our map.
+    // Then we add the Monthly Percent Change layer to our map.
     allMonthlyPercentChange.addTo(map);
 });
+
+//CompanyRegions = "https://raw.githubusercontent.com/kjkubik/ProjectJSONStockInfo/main/gz_2010_us_040_00_500k.json";
+CompanyRegions = "https://raw.githubusercontent.com/kjkubik/ProjectJSONStockInfo/main/UnitedStatesRegions.json";
+
+// color, dependant on region state is located in
+function getRegionColor(name_region) {
+
+    console.log("name_region: " + name_region);
+
+    switch (name_region) {
+        case name_region = 'Southeast':
+            return "#d73027";
+        case name_region = 'Northwest':
+            return "#fc8d59";
+        case name_region = 'Northeast':
+            return "#1b7837";
+        case name_region = 'Southwest':
+            return "#542788";
+        case name_region = 'Midwest':
+            return "#4575b4";
+        default:
+            return "#e0f3f8";
+    }
+}
+d3.json(CompanyRegions).then(function(data) {
+
+    function style(feature) {
+        return {
+            fillColor: getRegionColor(feature.properties.REGION),
+            weight: 2,
+            opacity: 1,
+            color: 'white',
+            dashArray: '3',
+            fillOpacity: 0.5
+        };
+    }
+    
+    //L.geoJson(data, {style: style}).addTo(map);
+    L.geoJson(data, {style: style}).addTo(allRegions);
+    
+
+    // Then we add the Monthly Percent Change layer to our map.
+    allRegions.addTo(map);
+});
+
