@@ -84,9 +84,29 @@ legend.onAdd = function() {
 legend.addTo(map);
 
 //**********/
-// Regions */
+// Region Midwest */
 //**********/
 
+<<<<<<< HEAD:Dashboards/Mapping_Stocks/static/js/map_daily_stock_mando.js
+let CompanyRegions = "https://raw.githubusercontent.com/scdoshi/us-geojson/master/geojson/region/Midwest.geojson";
+
+
+d3.json(CompanyRegions).then(function(data) {
+    console.log("THIS IS MY FLIPPING DATA: ");
+    // name_region = features.properties.NAME;
+    // console.log(name_region);
+
+    // console.log(data);
+    //Creating a GeoJSON layer with the retrieved data.
+    L.geoJSON(data, {
+        color: "red",
+        lineWeight: 1,
+        onEachFeature: function(feature, layer) {
+            console.log(layer)
+                // layer.bindPopup("<h2>" + "Neighborhood: " + feature.properties.AREA_NAME + "</2>");
+        }
+    }).addTo(map)
+=======
 CompanyRegions = "https://raw.githubusercontent.com/kjkubik/ProjectJSONStockInfo/main/gz_2010_us_040_00_500k.json";
 
 // color, dependant on region state is located in
@@ -124,11 +144,106 @@ d3.json(CompanyRegions).then(function(data) {
     
     L.geoJson(data, {style: style}).addTo(map);
 
+>>>>>>> origin:Dashboards/Mapping_Stocks/static/js/map_daily_stock.js
 });
 //=====================================================
 
 
+//**********/
+// Region Southeast */
+//**********/
 
+let CompanyRegions2 = "https://raw.githubusercontent.com/scdoshi/us-geojson/master/geojson/region/South.geojson";
+
+
+d3.json(CompanyRegions2).then(function(data) {
+    console.log("THIS IS MY FLIPPING DATA: ");
+    // name_region = features.properties.NAME;
+    // console.log(name_region);
+
+    // console.log(data);
+    //Creating a GeoJSON layer with the retrieved data.
+    L.geoJSON(data, {
+        color: "blue",
+        lineWeight: 1,
+        onEachFeature: function(feature, layer) {
+            console.log(layer)
+                // layer.bindPopup("<h2>" + "Neighborhood: " + feature.properties.AREA_NAME + "</2>");
+        }
+    }).addTo(map)
+});
+
+//**********/
+// Region West */
+//**********/
+
+let CompanyRegions3 = "https://raw.githubusercontent.com/kjkubik/ProjectJSONStockInfo/main/west.geojson";
+
+
+d3.json(CompanyRegions3).then(function(data) {
+    console.log("THIS IS MY FLIPPING DATA: ");
+    // name_region = features.properties.NAME;
+    // console.log(name_region);
+
+    // console.log(data);
+    //Creating a GeoJSON layer with the retrieved data.
+    L.geoJSON(data, {
+        color: "black",
+        lineWeight: 1,
+        onEachFeature: function(feature, layer) {
+            console.log(layer)
+                // layer.bindPopup("<h2>" + "Neighborhood: " + feature.properties.AREA_NAME + "</2>");
+        }
+    }).addTo(map)
+});
+
+//**********/
+// Region East  */
+//**********/
+
+let CompanyRegions4 = "https://raw.githubusercontent.com/scdoshi/us-geojson/master/geojson/region/Northeast.geojson";
+
+
+d3.json(CompanyRegions4).then(function(data) {
+    console.log("THIS IS MY FLIPPING DATA: ");
+    // name_region = features.properties.NAME;
+    // console.log(name_region);
+
+    // console.log(data);
+    //Creating a GeoJSON layer with the retrieved data.
+    L.geoJSON(data, {
+        color: "yellow",
+        lineWeight: 1,
+        onEachFeature: function(feature, layer) {
+            console.log(layer)
+                // layer.bindPopup("<h2>" + "Neighborhood: " + feature.properties.AREA_NAME + "</2>");
+        }
+    }).addTo(map)
+});
+
+//**********/
+// Region Northwest  */
+//**********/
+
+let CompanyRegions5 = "https://raw.githubusercontent.com/kjkubik/ProjectJSONStockInfo/main/northwest.geojson";
+
+
+d3.json(CompanyRegions5).then(function(data) {
+    console.log("THIS IS MY FLIPPING DATA: ");
+    // name_region = features.properties.NAME;
+    // console.log(name_region);
+
+    // console.log(data);
+    //Creating a GeoJSON layer with the retrieved data.
+    L.geoJSON(data, {
+        color: "green",
+        lineWeight: 1,
+        onEachFeature: function(feature, layer) {
+            console.log(layer)
+                // layer.bindPopup("<h2>" + "Neighborhood: " + feature.properties.AREA_NAME + "</2>");
+        }
+    }).addTo(map)
+});
 
 
 //******************************/
