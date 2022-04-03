@@ -37,15 +37,15 @@ let baseMaps = {
 
 // layers
 let allDailyPercentChange = new L.LayerGroup();
-let allMonthlyPercentChange = new L.LayerGroup();
 let allRegions = new L.LayerGroup();
+let allMonthlyPercentChange = new L.LayerGroup();
+
 
 // overlays 
 let overlays = {
-    "Company Regions": allRegions,
     "Daily Percentage Changes": allDailyPercentChange,
+    "Company Regions": allRegions,
     "Monthly Percent Changes": allMonthlyPercentChange
-
 };
 
 // control for layers to be toggled on and off
@@ -83,6 +83,49 @@ legend.onAdd = function() {
 // add legend to the map
 legend.addTo(map);
 
+//**********/
+// Regions */
+//**********/
+
+CompanyRegions = "https://raw.githubusercontent.com/kjkubik/ProjectJSONStockInfo/main/gz_2010_us_040_00_500k.json";
+
+// color, dependant on region state is located in
+function getRegionColor(name_region) {
+
+    console.log("name_region: " + name_region);
+
+    switch (name_region) {
+        case name_region = 'Southeast':
+            return "#d73027";
+        case name_region = 'Northwest':
+            return "#fc8d59";
+        case name_region = 'Northeast':
+            return "#1b7837";
+        case name_region = 'Southeast':
+            return "#91bfdb";
+        case name_region = 'Midwest':
+            return "#4575b4";
+        default:
+            return "#e0f3f8";
+    }
+}
+d3.json(CompanyRegions).then(function(data) {
+
+    function style(feature) {
+        return {
+            fillColor: getRegionColor(feature.properties.NAME),
+            weight: 2,
+            opacity: 1,
+            color: 'white',
+            dashArray: '3',
+            fillOpacity: 0.5
+        };
+    }
+    
+    L.geoJson(data, {style: style}).addTo(map);
+
+});
+//=====================================================
 
 
 
@@ -139,7 +182,7 @@ d3.json(DailyPercentageChanges).then(function(data) {
         if (magnitude === 0) {
             return 1;
         }
-        return magnitude * 3;
+        return magnitude * 4;
     }
 
     // GeoJSON layer for daily percent changes
@@ -162,8 +205,7 @@ d3.json(DailyPercentageChanges).then(function(data) {
     }).addTo(allDailyPercentChange);
 
     // Then we add the earthquake layer to our map.
-    setTimeout(() => { allDailyPercentChange.addTo(map); }, 10); // 
-    // 
+    allDailyPercentChange.addTo(map);
 });
 
 //**************************/
@@ -213,7 +255,7 @@ d3.json(MonthlyPercentChanges).then(function(data) {
         if (magnitude === 0) {
             return 1;
         }
-        return magnitude * 3;
+        return magnitude * 4;
     }
 
     // GeoJSON layer for monthly percent changes
@@ -236,50 +278,6 @@ d3.json(MonthlyPercentChanges).then(function(data) {
 
     }).addTo(allMonthlyPercentChange);
 
-    // // Then we add the earthquake layer to our map.
-    setTimeout(() => { allMonthlyPercentChange.addTo(map); }, 20); // 
-});
-
-//**********/
-// Regions */
-//**********/
-
-CompanyRegions = "https://raw.githubusercontent.com/kjkubik/ProjectJSONStockInfo/main/UnitedStatesRegions.json";
-
-// color, dependant on region state is located in
-function getRegionColor(name_region) {
-
-    console.log("name_region: " + name_region);
-
-    switch (name_region) {
-        case name_region = 'Southeast':
-            return "#d73027";
-        case name_region = 'Northwest':
-            return "#fc8d59";
-        case name_region = 'Northeast':
-            return "#1b7837";
-        case name_region = 'Southeast':
-            return "#91bfdb";
-        case name_region = 'Midwest':
-            return "#4575b4";
-        default:
-            return "#e0f3f8";
-    }
-}
-d3.json(CompanyRegions).then(function(data) {
-
-    function style(feature) {
-        return {
-            fillColor: getRegionColor(feature.properties.REGION),
-            weight: 2,
-            opacity: 1,
-            color: 'white',
-            dashArray: '3',
-            fillOpacity: 0.5
-        };
-    }
-
-    L.geoJson(data, { style: style }).addTo(allRegions)
-    allRegions.addTo(map);
-
+    // Then we add the earthquake layer to our map.
+    allMonthlyPercentChange.addTo(map);
 });
