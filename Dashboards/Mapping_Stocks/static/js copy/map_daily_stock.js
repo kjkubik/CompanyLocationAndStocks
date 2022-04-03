@@ -16,7 +16,7 @@ let satelliteStreets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/sate
 });
 
 let dark = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/dark-v10/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-    attribution: 'Map data Â© <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
+    attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
     accessToken: API_KEY
 });
@@ -37,15 +37,15 @@ let baseMaps = {
 
 // layers
 let allDailyPercentChange = new L.LayerGroup();
-let allMonthlyPercentChange = new L.LayerGroup();
 let allRegions = new L.LayerGroup();
+let allMonthlyPercentChange = new L.LayerGroup();
+
 
 // overlays 
 let overlays = {
-    "Company Regions": allRegions,
     "Daily Percentage Changes": allDailyPercentChange,
+    "Company Regions": allRegions,
     "Monthly Percent Changes": allMonthlyPercentChange
-
 };
 
 // control for layers to be toggled on and off
@@ -83,13 +83,61 @@ legend.onAdd = function() {
 // add legend to the map
 legend.addTo(map);
 
+//**********/
+// Regions */
+//**********/
+
+CompanyRegions = "https://raw.githubusercontent.com/kjkubik/ProjectJSONStockInfo/main/gz_2010_us_040_00_500k.json";
+
+// color, dependant on region state is located in
+function getRegionColor(name_region) {
+
+    console.log("name_region: " + name_region);
+
+    switch (name_region) {
+        case name_region = 'Southeast':
+            return "#d73027";
+        case name_region = 'Northwest':
+            return "#fc8d59";
+        case name_region = 'Northeast':
+            return "#1b7837";
+        case name_region = 'Southeast':
+            return "#91bfdb";
+        case name_region = 'Midwest':
+            return "#4575b4";
+        default:
+            return "#e0f3f8";
+    }
+}
+d3.json(CompanyRegions).then(function(data) {
+
+    function style(feature) {
+        return {
+            fillColor: getRegionColor(feature.properties.NAME),
+            weight: 2,
+            opacity: 1,
+            color: 'white',
+            dashArray: '3',
+            fillOpacity: 0.5
+        };
+    }
+    
+    L.geoJson(data, {style: style}).addTo(map);
+
+});
+//=====================================================
+
+
+
+
+
 //******************************/
 // Daily Stock Percent Changes */
 //******************************/
 
 let DailyPercentageChanges = "https://raw.githubusercontent.com/kjkubik/ProjectJSONStockInfo/main/daily_stock_map3.json"
 
-// retrieve Daily Percent Changes data
+// retrieve earthquake GeoJSON data
 d3.json(DailyPercentageChanges).then(function(data) {
 
     // style for daily percent changes
@@ -108,7 +156,7 @@ d3.json(DailyPercentageChanges).then(function(data) {
         };
     }
 
-    // color, dependant on value of daily percent change
+    // color, dependant on magnitude of earthquake
     function getColor(magnitude) {
 
         console.log(magnitude);
@@ -129,12 +177,12 @@ d3.json(DailyPercentageChanges).then(function(data) {
         }
     }
 
-    // radius, dependant on value of daily percent change 
+    // radius, dependant on magnitude of earthquake 
     function getRadius(magnitude) {
         if (magnitude === 0) {
             return 1;
         }
-        return magnitude * 3;
+        return magnitude * 4;
     }
 
     // GeoJSON layer for daily percent changes
@@ -156,10 +204,8 @@ d3.json(DailyPercentageChanges).then(function(data) {
 
     }).addTo(allDailyPercentChange);
 
-
-    // Then we add the allDailyPercentChange layer to our map.
-    setTimeout(() => { allDailyPercentChange.addTo(map); }, 10); // 
-    // 
+    // Then we add the earthquake layer to our map.
+    allDailyPercentChange.addTo(map);
 });
 
 //**************************/
@@ -167,6 +213,7 @@ d3.json(DailyPercentageChanges).then(function(data) {
 //**************************/
 
 MonthlyPercentChanges = "https://raw.githubusercontent.com/kjkubik/ProjectJSONStockInfo/main/monthly_json_new3.json";
+//const majorEQ = "resources\monthly_json_new.geojson"
 
 d3.json(MonthlyPercentChanges).then(function(data) {
 
@@ -186,7 +233,7 @@ d3.json(MonthlyPercentChanges).then(function(data) {
         };
     }
 
-    // color, dependant on value of monthly percent changes
+    // color, dependant on magnitude of earthquake
     function getColor(magnitude) {
 
         console.log(magnitude);
@@ -203,12 +250,12 @@ d3.json(MonthlyPercentChanges).then(function(data) {
         }
     }
 
-    // radius, dependant on value of monthly percent changes 
+    // radius, dependant on magnitude of earthquake 
     function getRadius(magnitude) {
         if (magnitude === 0) {
             return 1;
         }
-        return magnitude * 3;
+        return magnitude * 4;
     }
 
     // GeoJSON layer for monthly percent changes
@@ -222,7 +269,7 @@ d3.json(MonthlyPercentChanges).then(function(data) {
         // style for each circleMarker
         style: styleInfo,
 
-        // create popups for circleMarkers, display company information and geolocation info for each marker
+        // create a popups for circleMarkers, display magnitude and locationfor each earthquake
         onEachFeature: function(feature, layer) {
 
             layer.bindPopup("Company: " + feature.properties.company_name + "<br>Sector: " + feature.properties.sector + "<br>Region: " + feature.properties.region + "<br>Location: " +
@@ -231,52 +278,6 @@ d3.json(MonthlyPercentChanges).then(function(data) {
 
     }).addTo(allMonthlyPercentChange);
 
-
-    // Then we add the Monthly Percent Change layer to our map.
-    setTimeout(() => { allMonthlyPercentChange.addTo(map); }, 20); // 
-});
-
-//**********/
-// Regions */
-//**********/
-CompanyRegions = "https://raw.githubusercontent.com/kjkubik/ProjectJSONStockInfo/main/UnitedStatesRegions.json";
-
-// color, dependant on region state is located in
-function getRegionColor(name_region) {
-
-    console.log("name_region: " + name_region);
-
-    switch (name_region) {
-        case name_region = 'Southeast':
-            return "#d73027";
-        case name_region = 'Northwest':
-            return "#fc8d59";
-        case name_region = 'Northeast':
-            return "#1b7837";
-        case name_region = 'Southwest':
-            return "#542788";
-        case name_region = 'Midwest':
-            return "#4575b4";
-        default:
-            return "#e0f3f8";
-    }
-}
-d3.json(CompanyRegions).then(function(data) {
-
-    function style(feature) {
-        return {
-            fillColor: getRegionColor(feature.properties.REGION),
-            weight: 2,
-            opacity: 1,
-            color: 'white',
-            dashArray: '3',
-            fillOpacity: 0.5
-        };
-    }
-
-
-    L.geoJson(data, { style: style }).addTo(allRegions)
-    // Then we add the regional layer to our map.  
-    allRegions.addTo(map);
-
+    // Then we add the earthquake layer to our map.
+    allMonthlyPercentChange.addTo(map);
 });
