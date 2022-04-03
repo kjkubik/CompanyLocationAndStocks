@@ -89,55 +89,47 @@ legend.addTo(map);
 
 CompanyRegions = "https://raw.githubusercontent.com/kjkubik/ProjectJSONStockInfo/main/gz_2010_us_040_00_500k.json";
 
-// d3.json(CompanyRegions).then(function(data) {
-//     L.geoJSON(data, {
-//         color: "#264f45",
-//         weight: 2
-//     }).addTo(allRegions);
-// })
-// allRegions.addTo(map);
-
-//========================
-//let torontoHoods = "https://raw.githubusercontent.com/kjkubik/Mapping_Earthquakes/main/torontoNeighborhoods.json";
-// if (feature.properties = "Midwest") {
-//     colorMidwest = "red";
-// }
-// color, dependant on magnitude of earthquake
-function getRegionColor(name_region) {
-
-    // console.log(magnitude);
-
-    switch (name_region) {
-        case name_region = 'Southeast':
-            return "red";
-        case name_region = 'Northwest':
-            return "blue";
-        case name_region = 'Northeast':
-            return "orange";
-        case name_region = 'Southeast':
-            return "purple";
-        case name_region = 'Midwest':
-            return "yellow";
-        default:
-            return "black";
-    }
-}
 d3.json(CompanyRegions).then(function(data) {
-    console.log("THIS IS MY FLIPPING DATA: ");
-    // name_region = features.properties.NAME;
-    // console.log(name_region);
 
-    // console.log(data);
-    //Creating a GeoJSON layer with the retrieved data.
+    function styleRegion(feature) {
+
+        name_region = features.properties.NAME;
+
+        return {
+            color: getRegionColor(name_region)
+        };
+    }
+
+
     L.geoJSON(data, {
-        color: getRegionColor(name_region),
+        fillColor: getRegionColor(name_region),
         lineWeight: 1,
         onEachFeature: function(feature, layer) {
             console.log(layer)
                 // layer.bindPopup("<h2>" + "Neighborhood: " + feature.properties.AREA_NAME + "</2>");
         }
     }).addTo(map)
+
+    function getRegionColor(name_region) {
+
+        switch (name_region) {
+            case name_region = 'Southeast':
+                return "green";
+            case name_region = 'Northwest':
+                return "red";
+            case name_region = 'Northeast':
+                return "orange";
+            case name_region = 'Southeast':
+                return "purple";
+            case name_region = 'Midwest':
+                return "yellow";
+            default:
+                return "red";
+        }
+    }
 });
+
+
 //=====================================================
 
 
