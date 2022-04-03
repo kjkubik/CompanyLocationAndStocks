@@ -35,6 +35,16 @@ There are multiple pockets in the country that are at risk for becoming modern-d
 
 Additional information that was required was searched manually online by the team.
 
+- Map Sources
+  1. json_time_v2 => ../resources/monthly_json_new3.json
+  2. random_forest_30_day_json_v1 => ../resources/daily_stock_map3.json
+  3. We got the regional map from:Â [link]https://eric.clst.org/tech/usgeojson/Â 
+  4. We downloaded gz_2010_us_040_00_500k.json and added a column in the properties section named REGION.
+  6. map_daily_stocks.js is what we are using and map_daily_stock1.js is what Mando came up with having 4 regions.
+  7. Grabbed coordinates for regions from: [link]https://github.com/scdoshi/us-geojson/tree/master/geojson/region
+  8. This is where our data for the map: [link]https://github.com/kjkubik/ProjectJSONStockInfo
+  
+
 ### Technologies
 
 - Data Collection
@@ -170,7 +180,7 @@ regressor = GradientBoostingRegressor(
 max_depth=16,
 n_estimators=500,
 learning_rate=.01,
-criterion='mse', # ‘mse’, ‘mae’
+criterion='mse', # â€˜mseâ€™, â€˜maeâ€™
 )
 
 best_regressor = GradientBoostingRegressor(
