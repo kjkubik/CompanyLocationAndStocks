@@ -170,7 +170,7 @@ regressor = GradientBoostingRegressor(
 max_depth=16,
 n_estimators=500,
 learning_rate=.01,
-criterion='mse', # ‘mse’, ‘mae’
+criterion='mse', # â€˜mseâ€™, â€˜maeâ€™
 )
 
 best_regressor = GradientBoostingRegressor(
@@ -254,9 +254,4 @@ We've made multiple attempts to work with the different model types we wanted to
 - Armando Latigo
 - Nikita Mathur
 - Sarah Wiggins
-
-### Communication Protocols
-- Slack conversations multiple times a week
-- Zoom calls, both during class/office hours and outside of class 
-- reviews and comments left on GitHub pull requests
 
