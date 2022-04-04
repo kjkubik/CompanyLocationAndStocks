@@ -303,9 +303,3 @@ We've made multiple attempts to work with the different model types we wanted to
 - Armando Latigo
 - Nikita Mathur
 - Sarah Wiggins
-
-### Communication Protocols
-- Slack conversations multiple times a week
-- Zoom calls, both during class/office hours and outside of class 
-- reviews and comments left on GitHub pull requests
-
