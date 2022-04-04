@@ -102,6 +102,45 @@ Additional information that was required was searched manually online by the tea
 - The tables created for each were then joined into a master table to hold all data
 - The data was then brought into Jupyter Notebook for additional processing and analysis
 
+### Quantitative Company Data Wrangling
+We acquired the qualitative data from a single API found at polygon.io. We captured the data by running Get_Stock_Price.ipynp. There were two years of data we were able to capture and write to a single comma-delimited file. After this we did add a column by computing the percent change from opening and closing prices. Finally, we imported all data into the ticker_daily_stat. 
+
+#### Fields Captured
+  - Open
+  - Close
+  - High
+  - Low
+  - Volume
+  - Volume Weight
+  - Number of Transactions
+  - Percent Change
+
+### Qualitative Company Data Wrangling
+The first thing we did was to capture a listing of the top 100 Nasdaq companies.  This data was readily available in several places out on the web. We did compare sources and make sure we had the most current source of the top 100 companies. After that, it was our belief we needed more qualitative data.  We were able to capture company facts from https://companies-datas.p.rapidapi.com and port the data to a JSON file.  From this source, we used company size and employee number to add to our qualitative data. We also used Wikipedia to capture sector information. All this information was organized and imported into the company_info table. 
+
+#### Fields Captured
+- Ticker
+- Company URL 
+- Revenue
+- Employee Count
+- Sector  
+
+### Stock’s Data
+We were able to capture longitude and latitude company headquarters by using an API at nominatim.openstreetmap.org via coordinate_acqusition_FINAL.ipynb. This data was imported into the table ticker_location along with other fields we manually looked up.
+Fields Captured
+- Ticker
+-	City
+- State
+-	Country
+-	Longitude
+-	Latitude-
+
+### Map’s Regional Data 
+Thankfully we were able to find regional longitude, latitude GeoJSON file from https://eric.clst.org/tech/usgeojson/. This site offered several regional files to download. options. We chose the smallest file present for US States. We had to do some adjusting by adding the REGION field to the file. To be able to use them was a little tricky. We did have to create a repository for all mapping data we created. We downloaded gz_2010_us_040_00_500k.json and added a column in the properties section named REGION. After that we were able to utilize it to create the maps.  
+
+### Daily and Monthly Stock Changes
+Both the daily and monthly stock JSON was created using the company_all_star (joined) table. The processes needing to run were json_time_v2 and random_forest_30_day_json_v1. The output files were monthly_json_new3.json and daily_stock_map3.json.  Don’t forget to mention we published our results for the map’s data at https://github.com/kjkubik/ProjectJSONStockInfo
+
 ### Machine Learning Model
 
 We are considering the usage of Random Forest Models and Gradient Boosted Decision Trees.  
