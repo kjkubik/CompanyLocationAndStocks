@@ -164,16 +164,28 @@ While we have access to two years worth of data, but in order to not confuse our
 [Link to Code](https://github.com/kjkubik/CompanyLocationAndStocks/blob/main/source/random_forest_v3_1C.ipynb)
 
 Feature Selection:
-- STOCK HISTORY
+
+- REVENUE
+- SECTOR
+- REGION
+- OPEN VALUE
+- HIGH VALUE
+- LOW VALUE
+- CLOSE VALUE
+- PERCENT CHANGE VALUE WEIGHT (calculated)
+
+Target:
+
+- PERCENT CHANGE VALUE WEIGHT
 ```
-begin_date = '2022-01-01'
-end_date = '2022-03-12'
-day_range_of_iter = 2
+begin_date:  2022-01-10
+end_date:  2022-03-10
+day interval:  22 
 ```
 
 Engineering Features:
 ```
-n_estimators=3000, max_depth=15, min_samples_leaf=10, random_state=1 
+n_estimators=3500, max_depth=20, criterion='mse', random_state=1 
 ```
 
 #### Model Type - Gradient Boosted Decision Trees 
@@ -247,6 +259,14 @@ Results of initial attempts with Random Forest Model:
 r2 Score: 0.26188752627863454
 mean absolute error: 0.5406947967061854
 mean squared error: 0.9034786131604057
+```
+
+Best results of attempts with Random Forest Model:
+```
+r2 Score: 68.76 %
+mean absolute error: 3.63623531246166
+mean squared error: 29.585896555551106
+root mean squared error: 5.439291916743493
 ```
 
 Results of initial attempts with GBDT (attempt 1):
