@@ -195,7 +195,6 @@ As for the mean absolute error of 4.05. From what we could find, this may mean t
 
 The mean squared error and root mean squared error are related. That is, the square root of  37.87 is 6.15. It is the arithmetic average of the absolute errors |ei| = |yi – xi|, where yi is the prediction and xi the true value. It kind of tells us how are we are off; but it not exactly meaningful presently. 
 
-
 #### Intended Training and Testing 	
 
 We are considering training and testing our models primarily on the following features:
