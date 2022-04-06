@@ -19,7 +19,7 @@ There are multiple pockets in the country that are at risk for becoming modern-d
 3) Is how company crowds buy and sell stocks measurable by geographical location? 
 4) Does the geographical location of the home office matter?
 
-[Link to Presentation Draft on Google Slides](https://docs.google.com/presentation/d/1VUozX3sSfn4fqPxC4eFu0Whxek4CmRm0aLV6OSVnyMs/edit?usp=sharing)
+[Link to Presentation Draft on Google Slides](https://docs.google.com/presentation/d/1nUtX885AO_HRVsEofyW_EBp_c_SoiUONMUnrV-EACw0/edit?usp=sharing)
 
 ## Resources
 
