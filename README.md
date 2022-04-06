@@ -171,23 +171,23 @@ One of the things that we did notice is that the r2 score was high if we picked 
 
 Because of these inconsistencies, we believe that using more stock metrics would up the scores.  We would have love to add these to our data and if we did have time, we would have. 
 
-tkr_current_annual_earnings
-tkr_price_to_sales_ratio
-tkr_price_to_earnings_ratio
-tkr_price_to_book_ratio
-tkr_debt_to_equity_ratio
-tkr_FCF
-tkr_PEG_ratio
-tkr_operating_expenses
-tkr_capital_expences
-tkr_have_dividends
-tkr_have_share_buybacks
-tkr_earnings_per_share
-tkr_value
-tkr_payout_ratio
-tkr_beta
-tkr_return_on_equity
-tkr_compound_annual_growth_rate
+- Current Annual Earnings
+- Price to Sales Ratio
+- Price to Earnings Ratio
+- Price to Book Ratio
+- Debt to Equity Ratio
+- FCF
+- PEG ratio
+- Operating Expenses
+- Capital Expences
+- Have Dividends
+- Have Share Buybacks
+- Earnings Per Share
+- Value
+- Payout Ratio
+- Beta
+- Return on Equity
+- Compound Annual Growth Rate
 
 We also started a Long Short Term Memory Network model but ran out of time. 
 
