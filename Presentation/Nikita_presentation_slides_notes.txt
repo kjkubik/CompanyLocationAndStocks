@@ -1,0 +1,27 @@
+Overview Section - Outline
+===============================================
+Slide Content:  
+Title Screen 
+- name of project
+- name of members
+
+Talking Points: 
+- Introduction to Team El Paso 
+- Name all of the members
+-----------------------------------------------
+Slide Content:
+- Name of Project
+- Sub-caption of project
+
+Talking Points:
+- an explanation of what our project is about
+- why did we choose this?
+-----------------------------------------------
+Slide Content: 
+- Questions we hope to answer, paraphrased
+
+Talking Points:
+- When investigating the performance of companies by their stocks, do geographical locations have a significant impact in comparison to other factors such as the size of the company or revenue?
+- Is it necessary to move the locations of headquarters to cities that have high concentrations of other company headquarters within the same sectors in order to improve stock performance?
+- Is how company crowds buy and sell stocks measurable by geographical location?
+- Does the geographical location of the home office matter?
