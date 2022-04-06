@@ -97,6 +97,11 @@ Additional information that was required was searched manually online by the tea
 
 #### Description of Preprocessing
 
+We initially had 2 years of quantitative data consisting of open, close, high, low, volume, volume weight and percent change to begin with for the top 100 Nasdaq stocks. The qualitative data consisted of the revenue, employee count and sector. The locational data consisted of city, state, regional and the company’s home office longitudes and latitudes. We used a query to join the data into one table before exporting the data into a comma delimited file. 
+
+In the preprocessing we moved the comma delimited file into a dataframe. From there we used interval controls by capturing the first and last day of an interval, computing the percent change in the volume weight and volume weight and merging the first and last day into a signal dataframe. We then created the categorical data and dropped the columns that were of no use for modeling.
+
+Note: 
 - Each individual data set was saved into a CSV file 
 - Cleanup was done on each data set to confirm there were no missing values
 - The datasets were then imported into Postgres 
@@ -145,7 +150,51 @@ Both the daily and monthly stock JSON was created using the company_all_star (jo
 
 ### Machine Learning Model
 
-We are considering the usage of Random Forest Models and Gradient Boosted Decision Trees.  
+The two models we used to train the preproced data were Random Forest Models and Gradient Boosted Decision Trees.
+
+### Random Forest Models
+
+### Gradient Boosted Decision Trees
+After that we did our preprocessing, we started training our data. The target for our model is the percent change in volume weight. The reason we chose this as our target is because when buying and selling stock, it is more important than the actual price of the stock.  The shape of our training and test data is as follows:
+![](images/Shape.png)
+
+To train the Gradient Boosting Decision Tree, I used the following settings. 
+![](images/GBDT.png)
+
+The results of the Gradient Boosting Decision Tree are as follows: 
+![](images/NasdaqPic.png)
+The r2 score is expressed as a percentage. The score of 69.74 means that the percentage change of the volume weight prediction is at most 69.74% accurate. However, just because the results are explainable doesn’t mean 69.74% accurate. We only have 69.74% of the picture. 
+
+One of the things that we did notice is that the r2 score was high if we picked dates where it was obvious the stock market in an upward or downward trend. The results below show us that the market is in an upward trend between those dates. It is very possible to get r2 scores as low as 32%. 
+
+![](images/gradientBoostingDT.png)
+
+Because of these inconsistencies, we believe that using more stock metrics would up the scores.  We would have love to add these to our data and if we did have time, we would have. 
+
+tkr_current_annual_earnings
+tkr_price_to_sales_ratio
+tkr_price_to_earnings_ratio
+tkr_price_to_book_ratio
+tkr_debt_to_equity_ratio
+tkr_FCF
+tkr_PEG_ratio
+tkr_operating_expenses
+tkr_capital_expences
+tkr_have_dividends
+tkr_have_share_buybacks
+tkr_earnings_per_share
+tkr_value
+tkr_payout_ratio
+tkr_beta
+tkr_return_on_equity
+tkr_compound_annual_growth_rate
+
+We also started a Long Short Term Memory Network model but ran out of time. 
+
+As for the mean absolute error of 4.05. From what we could find, this may mean that on average, the forecast's distance from the true value.  
+
+The mean squared error and root mean squared error are related. That is, the square root of  37.87 is 6.15. It is the arithmetic average of the absolute errors |ei| = |yi – xi|, where yi is the prediction and xi the true value. It kind of tells us how are we are off; but it not exactly meaningful presently. 
+
 
 #### Intended Training and Testing 	
 
