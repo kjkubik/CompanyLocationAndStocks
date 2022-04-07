@@ -1,0 +1,9 @@
+-Graph Analysis
+  - Results we see in the line graph is that stocks went down drastically in March 2020, going down a whole 1.6% in the average percentage change over 102 stocks combined. 
+    You can see the drop in the line graph.
+  - Another observation you can see is the stock market starts to pick up a bit around Feburary 2022.
+  - I think these 2 observations are related to COVID
+  -The bar graphs show the individual stocks and how they were specifically affected by monthly, yearly and quarterly for each year.
+- Geographic Analysis
+  - The heatmap shows the company stocks locations and what their what their percent changes are daily and monthly. The bigger the dot, the bigger the percent change is.
+  - It also shows you the exact location and region the belong to
