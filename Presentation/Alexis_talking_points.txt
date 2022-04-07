@@ -1,0 +1,11 @@
+1. As stated earlier we wanted to see if a company’s stock would increase/decrease depending on the region it is located.
+    If we were looking at how stock changed during the pandemic would we see a decrease in first year of pandemic, and then a rise in some stocks up until current.
+
+2. We were approaching our answer on whether there's a correlation between stock performance and company location.
+    The information we have is the start of an analysis for getting the results with more time we could find the correlationbetween them.
+3. For the future of this analysis, we would need to incorporate more data on stocks (ex: companys startup location vs todays location)
+        which woud require more time to extract the data and compare the results of the locations.
+    In that comparison we would need to evaluate if the cities are big/small and how they their economic structure began and is current.
+    In order to reach our final analysis time is needed to gather all required data and make the final comparison. 
+    Lastly the machine learning model we used may nothave best fit the information we need to make our analysis, for the future it would be great to try 
+        a different machine learning model (do research on which machine best serves the data we are using)
