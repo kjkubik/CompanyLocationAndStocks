@@ -140,7 +140,7 @@ Fields Captured
 - State
 -	Country
 -	Longitude
--	Latitude-
+-	Latitude
 
 ### Map’s Regional Data 
 Thankfully we were able to find regional longitude, latitude GeoJSON file from https://eric.clst.org/tech/usgeojson/. This site offered several regional files to download. options. We chose the smallest file present for US States. We had to do some adjusting by adding the REGION field to the file. To be able to use them was a little tricky. We did have to create a repository for all mapping data we created. We downloaded gz_2010_us_040_00_500k.json and added a column in the properties section named REGION. After that we were able to utilize it to create the maps.  
